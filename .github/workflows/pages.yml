@@ -28,12 +28,12 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends xsltproc libxml2-utils
-          python -m pip install --quiet lxml
+          python -m pip install --quiet -r requirements.txt
 
       - name: Check the TEI file
         run: |
-          xmllint --noout ten-great-novels.xml
-          python3 consistency.py ten-great-novels.xml
+          xmllint --noout data/ten-great-novels.xml
+          python3 scripts/consistency.py data/ten-great-novels.xml
 
       - name: Build the site and the data files
         run: sh build.sh
@@ -41,8 +41,11 @@ jobs:
       - name: Collect the files to publish
         run: |
           mkdir -p _site
-          cp index.html query.rq correspondents.geojson \
-             ten-great-novels.graphml ten-great-novels.xml _site/
+          cp index.html schema.jsonld query.rq \
+             ten-great-novels.graphml data/ten-great-novels.xml _site/
+          cp assets/favicon.svg _site/
+          # written only when the Wikidata Query Service answered during the build
+          [ -f correspondents.geojson ] && cp correspondents.geojson _site/ || true
 
       - uses: actions/upload-pages-artifact@v3
         with:

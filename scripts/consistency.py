@@ -183,7 +183,7 @@ exact=sum(1 for _,n,m in delta if n==m); over=[(l,n,m) for l,n,m in delta if m>n
 ok(f"Abgleich mit gedruckter Auszählung: {exact} von {len(delta)} Titeln exakt, "
    f"{len(over)} Titel über der gedruckten Zahl")
 
-print("="*100); print("KONSISTENZTEST  —  Ten Great Novels, TEI P5"); print("="*100)
+print("="*100); print("KONSISTENZTEST:  Ten Great Novels, TEI P5"); print("="*100)
 for m in OK:   print("  OK    ", m)
 for m in WARN: print("  HINWEIS", m)
 for m in ERR:  print("  FEHLER ", m)

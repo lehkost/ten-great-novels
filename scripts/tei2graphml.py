@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-tei2graphml.py — erzeugt aus der TEI-Ausgabe von »Ten Great Novels« ein
+tei2graphml.py: erzeugt aus der TEI-Ausgabe von »Ten Great Novels« ein
 bipartites Netzwerk im GraphML-Format.
 
 Knoten sind Briefschreiber (rs/@type="voter") und Werke (rs/@type="novel").
@@ -13,7 +13,7 @@ Knotenkennungen: die xml:id des Briefschreibers (»voter-everett-c-c«) und
 »work_« plus Wikidata-Q-Nummer (»work_Q907568«).
 
 Aufruf:
-    python3 tei2graphml.py Ten_Great_Novels_1884.xml co-voting.graphml
+    python3 tei2graphml.py ten-great-novels.xml co-voting.graphml
 """
 
 from __future__ import annotations

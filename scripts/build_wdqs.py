@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-build_wdqs.py — reads the TEI file, counts the correspondents per place and
+build_wdqs.py: reads the TEI file, counts the correspondents per place and
 writes the SPARQL query plus the two Wikidata Query Service links.
 
-Usage: python3 build_wdqs.py Ten_Great_Novels_1884.xml
+Usage: python3 build_wdqs.py ten-great-novels.xml
 Writes: query.rq, wdqs-url.txt (line 1 = embed/auto-run, line 2 = editor)
 """
 import sys, urllib.parse
@@ -35,7 +35,7 @@ values = '\n'.join(lines + [cur])
 
 query = f"""#defaultView:Map
 # Places of the correspondents in "Ten Great Novels" (Chicago 1891)
-# {sum(cnt.values())} correspondents, {len(cnt)} places — generated from the TEI edition
+# {sum(cnt.values())} correspondents, {len(cnt)} places, generated from the TEI edition
 SELECT ?placeLabel ?correspondents ?coord {{
   VALUES (?place ?correspondents) {{
 {values}

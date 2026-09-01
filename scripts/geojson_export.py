@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-geojson_export.py — builds a GeoJSON of the correspondents' places and the
+geojson_export.py: builds a GeoJSON of the correspondents' places and the
 matching geojson.io link.
 
 The counts come from the TEI file, the coordinates and names from Wikidata

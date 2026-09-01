@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    tei2html.xsl — builds a plain static HTML page for GitHub Pages
-    from the TEI edition of "Ten Great Novels".
+    tei2html.xsl: builds a plain static HTML page for GitHub Pages
+    from the TEI edition of "Ten Great Novels"
 
-    Usage:  xsltproc -o index.html tei2html.xsl Ten_Great_Novels_1884.xml
+    Usage: xsltproc -o index.html tei2html.xsl ten-great-novels.xml
     XSLT 1.0; runs with xsltproc, Saxon and in the browser.
 -->
 <xsl:stylesheet version="1.0"
@@ -33,9 +33,19 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
+  <xsl:variable name="base">
+    <xsl:choose>
+      <xsl:when test="contains($url,'index.html')">
+        <xsl:value-of select="substring-before($url,'index.html')"/>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$url"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
   <xsl:variable name="orcid"
       select="//tei:titleStmt/tei:respStmt/tei:persName[contains(@ref,'orcid.org')][1]/@ref"/>
   <xsl:variable name="licence" select="//tei:publicationStmt/tei:availability/tei:licence[1]"/>
+  <xsl:variable name="version" select="//tei:editionStmt/tei:edition/@n"/>
+  <xsl:variable name="pubdate-iso" select="//tei:publicationStmt/tei:date/@when"/>
 
   <!-- Muenchian grouping: XSLT 1.0 has no distinct-values(), so a title counts
        once if it is the first element in its @ref group. -->
@@ -71,10 +81,12 @@
              (<meta http-equiv="Content-Type" …>); a second one here would
              be a validation error. -->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
         <xsl:if test="$licence/@target">
           <link rel="license" href="{$licence/@target}"/>
         </xsl:if>
         <title><xsl:value-of select="//tei:titleStmt/tei:title[@type='main']"/></title>
+        <xsl:call-template name="jsonld"/>
         <style>
 :root{
   color-scheme: light;
@@ -137,7 +149,7 @@ ul.cols li{break-inside:avoid}
         </style>
       </head>
       <body>
-        <main>
+        <main id="edition">
           <xsl:call-template name="about"/>
           <xsl:call-template name="citation"/>
           <xsl:call-template name="legend"/>
@@ -147,6 +159,145 @@ ul.cols li{break-inside:avoid}
         </main>
       </body>
     </html>
+  </xsl:template>
+
+  <!-- ===================================================================== -->
+  <!--  schema.org metadata (JSON-LD). Every value comes from the TEI header  -->
+  <!--  or from the two build parameters, so it cannot drift from the file.   -->
+  <!-- ===================================================================== -->
+
+  <xsl:template name="jsonld">
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Book",
+   "@id": "<xsl:value-of select="$url"/>#edition",
+   "name": "<xsl:call-template name="esc">
+       <xsl:with-param name="s" select="concat(//tei:titleStmt/tei:title[@type='main'], ': ',
+                                               //tei:titleStmt/tei:title[@type='sub'])"/>
+     </xsl:call-template>",
+   "url": "<xsl:value-of select="$url"/>",
+   "inLanguage": "en",
+   "bookEdition": "TEI edition, version <xsl:value-of select="$version"/>",
+   "datePublished": "<xsl:value-of select="//tei:publicationStmt/tei:date/@when"/>",
+   "license": "<xsl:value-of select="$licence/@target"/>",
+   "creator": {
+    "@type": "Person",
+    "@id": "<xsl:value-of select="$orcid"/>",
+    "name": "<xsl:call-template name="esc">
+        <xsl:with-param name="s" select="//tei:titleStmt/tei:respStmt/tei:persName"/>
+      </xsl:call-template>",
+    "sameAs": "<xsl:value-of select="$orcid"/>"
+   },
+   "editor": {
+    "@type": "Person",
+    "name": "<xsl:call-template name="esc">
+        <xsl:with-param name="s" select="//tei:titleStmt/tei:editor"/>
+      </xsl:call-template>",
+    "sameAs": "<xsl:value-of select="//tei:titleStmt/tei:editor/tei:persName/@ref"/>"
+   },
+   "keywords": [<xsl:for-each select="//tei:textClass/tei:keywords/tei:term">"<xsl:call-template
+       name="esc"><xsl:with-param name="s" select="."/></xsl:call-template>"<xsl:if
+       test="position() != last()">, </xsl:if></xsl:for-each>],
+   "isBasedOn": {
+    "@type": "Book",
+    "name": "<xsl:call-template name="esc">
+        <xsl:with-param name="s" select="//tei:sourceDesc//tei:monogr/tei:title"/>
+      </xsl:call-template>",
+    "bookEdition": "<xsl:value-of select="//tei:monogr/tei:edition"/>",
+    "datePublished": "<xsl:value-of select="//tei:imprint/tei:date/@when"/>",
+    "publisher": {
+     "@type": "Organization",
+     "name": "<xsl:call-template name="esc">
+         <xsl:with-param name="s" select="//tei:imprint/tei:publisher"/>
+       </xsl:call-template>",
+     "location": "<xsl:value-of select="//tei:imprint/tei:pubPlace"/>"
+    },
+    "sameAs": "<xsl:value-of select="$gb-raw"/>"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "<xsl:value-of select="$url"/>#data",
+   "name": "<xsl:call-template name="esc">
+       <xsl:with-param name="s" select="//tei:titleStmt/tei:title[@type='main']"/>
+     </xsl:call-template>: TEI Edition 2026",
+   "description": "This digital edition presents the pamphlet in full, with novels, authors, correspondents, and places annotated and, where possible, linked to Wikidata. Extracted data derived from the edition are also provided for further analysis and reuse.",
+   "url": "<xsl:value-of select="$url"/>",
+   "license": "<xsl:value-of select="$licence/@target"/>",
+   "isBasedOn": { "@id": "<xsl:value-of select="$url"/>#edition" },
+   "creator": { "@id": "<xsl:value-of select="$orcid"/>" },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "TEI edition",
+     "encodingFormat": "application/tei+xml",
+     "contentUrl": "<xsl:value-of select="$base"/>ten-great-novels.xml"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Bipartite network of correspondents and votes",
+     "encodingFormat": "application/graphml+xml",
+     "contentUrl": "<xsl:value-of select="$base"/>ten-great-novels.graphml"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Places of the correspondents",
+     "encodingFormat": "application/geo+json",
+     "contentUrl": "<xsl:value-of select="$base"/>correspondents.geojson"
+    }
+   ]
+  }
+ ]
+}
+    </script>
+  </xsl:template>
+
+  <!-- 2026-09-01 -> 1 September 2026. XSLT 1.0 has no date formatting. -->
+  <xsl:template name="date-human">
+    <xsl:param name="iso"/>
+    <xsl:variable name="m" select="substring($iso,6,2)"/>
+    <xsl:choose>
+      <xsl:when test="string-length($iso) = 10">
+        <xsl:value-of select="number(substring($iso,9,2))"/>
+        <xsl:text> </xsl:text>
+        <xsl:choose>
+          <xsl:when test="$m='01'">January</xsl:when>
+          <xsl:when test="$m='02'">February</xsl:when>
+          <xsl:when test="$m='03'">March</xsl:when>
+          <xsl:when test="$m='04'">April</xsl:when>
+          <xsl:when test="$m='05'">May</xsl:when>
+          <xsl:when test="$m='06'">June</xsl:when>
+          <xsl:when test="$m='07'">July</xsl:when>
+          <xsl:when test="$m='08'">August</xsl:when>
+          <xsl:when test="$m='09'">September</xsl:when>
+          <xsl:when test="$m='10'">October</xsl:when>
+          <xsl:when test="$m='11'">November</xsl:when>
+          <xsl:otherwise>December</xsl:otherwise>
+        </xsl:choose>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="substring($iso,1,4)"/>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$iso"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- Escapes the two characters that would break a JSON string. -->
+  <xsl:template name="esc">
+    <xsl:param name="s"/>
+    <xsl:variable name="t" select="normalize-space($s)"/>
+    <xsl:choose>
+      <xsl:when test="contains($t, '&quot;')">
+        <xsl:value-of select="substring-before($t, '&quot;')"/>
+        <xsl:text>\&quot;</xsl:text>
+        <xsl:call-template name="esc">
+          <xsl:with-param name="s" select="substring-after($t, '&quot;')"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$t"/></xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="about">
@@ -172,7 +323,13 @@ ul.cols li{break-inside:avoid}
       <b>Ten Great Novels: Suggestions for Clubs and Private Reading.</b>
       <xsl:text> Seventh Thousand. Chicago: Kerr &amp; Company 1891. TEI edition, digitized, encoded and annotated by </xsl:text>
       <a href="{$orcid}">Frank Fischer</a>
-      <xsl:text>, version 1.0, 31 August 2026, </xsl:text>
+      <xsl:text>, version </xsl:text>
+      <xsl:value-of select="$version"/>
+      <xsl:text>, </xsl:text>
+      <xsl:call-template name="date-human">
+        <xsl:with-param name="iso" select="$pubdate-iso"/>
+      </xsl:call-template>
+      <xsl:text>, </xsl:text>
       <a href="{$url}"><xsl:value-of select="$url"/></a>
       <xsl:text>.</xsl:text>
       <xsl:if test="$licence">
@@ -215,7 +372,7 @@ ul.cols li{break-inside:avoid}
   </xsl:template>
 
   <xsl:template name="data">
-    <div class="box box-data">
+    <div class="box box-data" id="data">
       <span class="bh">Data and downloads</span>
       <ul>
         <li>Bipartite network of correspondents and votes

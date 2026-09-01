@@ -12,6 +12,9 @@
           <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+        <edition n="1.0">Version 1.0</edition>
+      </editionStmt>
       <publicationStmt>
         <authority>
           <persName>Frank Fischer</persName>
@@ -29,7 +32,7 @@
           <monogr>
             <title level="m">Ten Great Novels: Suggestions for Clubs and Private Reading</title>
             <editor>Jenkin Lloyd Jones</editor>
-            <edition>Seventh thousand</edition>
+            <edition>Seventh Thousand</edition>
             <imprint>
               <pubPlace>Chicago</pubPlace>
               <publisher>Charles H. Kerr &amp; Company</publisher>
@@ -41,8 +44,8 @@
             Google.</note>
         </biblStruct>
         <bibl type="digitalSource">
-          <ref target="https://books.google.com/books?id=a5xPAQAAMAAJ&amp;printsec=frontcover">
-            Google Books </ref>
+          <ref target="https://books.google.com/books?id=a5xPAQAAMAAJ&amp;printsec=frontcover"
+            >Google Books</ref>
           <date type="accessed" when="2026-09-01">1 September 2026</date>
           <note type="rights">The digitized work is in the <ref
               target="https://creativecommons.org/publicdomain/mark/1.0/">public
@@ -97,6 +100,7 @@
       </langUsage>
       <textClass>
         <keywords>
+          <term>literary canon</term>
           <term>novel</term>
           <term>survey</term>
           <term>Unity Club, Chicago</term>
