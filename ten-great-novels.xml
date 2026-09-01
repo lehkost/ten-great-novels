@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Ten Great Novels</title>
+        <title type="sub">Suggestions for Clubs and Private Reading</title>
+        <editor><persName ref="http://www.wikidata.org/entity/Q6177549">Jenkin Lloyd
+            Jones</persName></editor>
+        <respStmt>
+          <resp>TEI edition, digitized, encoded and annotated by</resp>
+          <persName ref="https://orcid.org/0000-0003-2419-6629">Frank Fischer</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>
+          <persName>Frank Fischer</persName>
+        </authority>
+        <idno type="URL">https://lehkost.github.io/ten-great-novels/index.html</idno>
+        <date when="2026-09-01"/>
+        <availability status="free">
+          <licence target="http://creativecommons.org/publicdomain/zero/1.0/">The encoding and
+            annotation of this edition are released under CC0 1.0 Universal. The 1891 text itself is
+            in the public domain.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct type="printedSource">
+          <monogr>
+            <title level="m">Ten Great Novels: Suggestions for Clubs and Private Reading</title>
+            <editor>Jenkin Lloyd Jones</editor>
+            <edition>Seventh thousand</edition>
+            <imprint>
+              <pubPlace>Chicago</pubPlace>
+              <publisher>Charles H. Kerr &amp; Company</publisher>
+              <date when="1891">1891</date>
+            </imprint>
+            <extent>23 pages</extent>
+          </monogr>
+          <note type="digitisation">Copy held by the University of Chicago Library; digitized by
+            Google.</note>
+        </biblStruct>
+        <bibl type="digitalSource">
+          <ref target="https://books.google.com/books?id=a5xPAQAAMAAJ&amp;printsec=frontcover">
+            Google Books </ref>
+          <date type="accessed" when="2026-09-01">1 September 2026</date>
+          <note type="rights">The digitized work is in the <ref
+              target="https://creativecommons.org/publicdomain/mark/1.0/">public
+            domain</ref>.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <normalization>
+          <p>Diplomatic transcription. Typographical errors and other peculiarities of the source
+            (e.g. <mentioned>McEroy</mentioned>, <mentioned>Waverly</mentioned>, <mentioned>Clarissa
+              Harlow</mentioned>, <mentioned>Turgénieff</mentioned>) have been retained.</p>
+        </normalization>
+        <hyphenation eol="hard">
+          <p>End-of-line hyphens have been resolved.</p>
+        </hyphenation>
+      </editorialDecl>
+      <refsDecl>
+        <p>Page breaks are marked with <gi>pb</gi>. The <att>n</att> numbering follows the
+          pagination of the digitized copy (23 pages); from page 3 onward, it corresponds to the
+          printed pagination. Pages 1 and 2 (title page and prefatory note) are unpaginated in the
+          printed source.</p>
+      </refsDecl>
+      <classDecl>
+        <taxonomy xml:id="reference-status">
+          <category xml:id="vote">
+            <catDesc>Work title included in the list submitted by the respondent and therefore
+              counted as a vote.</catDesc>
+          </category>
+          <category xml:id="mention">
+            <catDesc>Work title mentioned only in the accompanying text, for example as a title
+              considered, excluded, described as unread, or otherwise not included in the submitted
+              list.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+      <p><gi>rs</gi> marks novels (<att>type</att>=<val>novel</val>), authors
+          (<att>type</att>=<val>author</val>) and the respondents to the survey
+          (<att>type</att>=<val>voter</val>).</p>
+      <p>In <gi>div</gi>
+        <att>type</att>=<val>letters</val>, every work title carries an <att>ana</att> value; <ref
+          target="#vote">#vote</ref> and <ref target="#mention">#mention</ref> are exhaustive and
+        mutually exclusive, so a title without <att>ana</att> indicates an unclassified reference.
+        In <gi>div</gi>
+        <att>type</att>=<val>vote</val>, <att>ana</att> is not used, since this section contains
+        already aggregated vote totals.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term>novel</term>
+          <term>survey</term>
+          <term>Unity Club, Chicago</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-01">first version</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <pb n="1"/>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart type="main">TEN GREAT NOVELS</titlePart>
+          <titlePart type="sub">SUGGESTIONS FOR CLUBS AND PRIVATE READING</titlePart>
+        </docTitle>
+        <byline>EDITED BY <docAuthor>JENKIN LLOYD JONES</docAuthor></byline>
+        <docEdition>SEVENTH THOUSAND</docEdition>
+        <docImprint>
+          <pubPlace>CHICAGO</pubPlace>
+          <publisher>CHARLES H. KERR &amp; COMPANY</publisher>
+          <address>
+            <addrLine>175 Dearborn Street</addrLine>
+          </address>
+          <docDate when="1891">1891</docDate>
+        </docImprint>
+      </titlePage>
+      <pb n="2"/>
+      <div type="preface">
+        <p>In June, 1884, the leader of the Unity Club, All Souls Church, Chicago, addressed the
+          letter given on the opposite page to a number of friends likely to be interested in such
+          an experiment. Seventy answers were received, one hundred and forty-seven different novels
+          were recommended, and the whole correspondence was published in <title level="j"
+            >Unity</title> of July 16th and the two succeeding numbers. The correspondence thus
+          obtained attracted more attention than was expected, and, in response to urgent calls, was
+          republished in <title level="j">Unity</title> of February 16th, 1885. The several issues
+          of <title level="j">Unity</title> have been long since exhausted, and the correspondence
+          is re-issued in pamphlet form, in the hope that it may reach still other hands and
+          stimulate still other circles in the reading of the best books.</p>
+        <p>The names of the authors of novels have been omitted for brevity's sake in "The Letters,"
+          but so far as known they will be found in the list published under "The Vote." The list is
+          arranged in the order of popularity; the preferred ten heading the column.</p>
+      </div>
+    </front>
+    <pb n="3"/>
+    <body>
+      <head>TEN GREAT NOVELS.</head>
+      <div type="question">
+        <head>THE QUESTION.</head>
+        <opener>
+          <dateline><placeName ref="http://www.wikidata.org/entity/Q1297">Chicago, Ill.</placeName>,
+              <date when="1884-06-10">June 10, 1884</date>.</dateline>
+          <salute>Dear Sir or Madam:</salute>
+        </opener>
+        <p>I want to recommend to the young people of my "Unity Club" a reading list of TEN GREAT
+          NOVELS, the noblest available to English readers. I am asking eighty or more reading
+          friends for such a list. Will you send me yours? Name no more than ten, those that seem to
+          you the very best in the world's literature. When those in foreign tongues are selected,
+          please suggest the best translation. An early response solicited.</p>
+        <closer>
+          <salute>Respectfully yours,</salute>
+          <signed><persName ref="http://www.wikidata.org/entity/Q6177549">Jenkin Lloyd
+              Jones</persName>.</signed>
+        </closer>
+      </div>
+      <div type="vote">
+        <head>THE VOTE.</head>
+        <list type="ranked" rend="two-column">
+          <item n="1"><rs type="novel" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>
+            <num>39</num></item>
+          <item n="2"><rs type="novel" ref="http://www.wikidata.org/entity/Q180736">Les
+              Miserables</rs>
+            <num>39</num></item>
+          <item n="3"><rs type="novel" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>
+            <num>37</num></item>
+          <item n="4"><rs type="novel" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>
+            <num>36</num></item>
+          <item n="5"><rs type="novel" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>
+            <num>35</num></item>
+          <item n="6"><rs type="novel" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>
+            <num>28</num></item>
+          <item n="7"><rs type="novel" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>
+            <num>24</num></item>
+          <item n="8"><rs type="novel" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>
+            <num>24</num></item>
+          <item n="9"><rs type="novel" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>
+            <num>24</num></item>
+          <item n="10"><rs type="novel" ref="http://www.wikidata.org/entity/Q4820313">On the
+              Heights</rs>
+            <num>23</num></item>
+        </list>
+        <list type="ranked">
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q127332">Bronté</rs>
+            <num>20</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>
+            <num>20</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>
+            <num>19</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q79025"
+              >Scott</rs>
+            <num>18</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>
+            <num>15</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q368519"
+              >MacDonald</rs>
+            <num>13</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q353238">Kingsley</rs>
+            <num>11</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5682">Cervantes</rs>
+            <num>10</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q3222702">The Marble Faun</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q69339">Hawthorne</rs>
+            <num>10</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q1215018">Mill on the
+              Floss</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q131333">George
+              Eliot</rs>
+            <num>10</num></item>
+          <pb n="4"/>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q3816">George Sand</rs>
+            <num>9</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>
+            <num>8</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q883305">Bleak House</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>
+            <num>8</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>
+            <num>8</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q1218985">Last Days of
+              Pompeii</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q318462"
+              >Bulwer</rs>
+            <num>7</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q123041">Madame de Staël</rs>
+            <num>6</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q483034">Robinson Crusoe</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q40946">DeFoe</rs>
+            <num>6</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q127332">Bronté</rs>
+            <num>6</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q1196205">Vicar of
+              Wakefield</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q236236"
+              >Goldsmith</rs>
+            <num>6</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q2288976">Guy Mannering</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs>
+            <num>5</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q3400981">Lorna Doone</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q3316148">Blackmore</rs>
+            <num>5</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q7989800">Westward Ho!</rs>
+            <rs type="author" ref="http://www.wikidata.org/entity/Q353238">Kingsley</rs>
+            <num>5</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q5442230">Felix Holt</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q28491">I Promessi Sposi</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q1064">Manzoni</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q6237289">John Halifax,
+              Gentleman</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q2331155"
+              >Craik</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q3234969">Old Mortality</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q460583">Pickwick Papers</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q170583">Pride and
+              Prejudice</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q36322"
+              >Austen</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q638327">Silas Marner</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q102461080">The Neighbors</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q262145">Bremer</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q492384">Titan</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q77079">Richter</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q7772832">The Virginians</rs>.
+              <rs type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q1557935">Our Mutual
+              Friend</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>
+            <num>4</num></item>
+          <item><rs type="novel" ref="http://www.wikidata.org/entity/Q108665083">An Egyptian
+              Princess</rs>. <rs type="author" ref="http://www.wikidata.org/entity/Q62765"
+              >Ebers</rs>
+            <num>4</num></item>
+        </list>
+        <div type="votegroup" n="3">
+          <head rend="italic">Three Votes Each.</head>
+          <p><rs type="novel" ref="http://www.wikidata.org/entity/Q1157183">The Antiquary</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q16385244">The Caxtons</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q318462">Bulwer</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q7723455">The Cloister and the Hearth</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q247473">Reade</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q16385982">Helen</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q237575">Edgeworth</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141221964">Margaret</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q7660802">Judd</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q3793666">The Minister's Wooing</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q102513">Stowe</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q7162382">Pendennis</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2469230">Quentin Durward</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q2156104">Rob Roy</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q79025">Scott</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q1141732">House of Seven Gables</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q69339">Hawthorne</rs>.</p>
+        </div>
+        <div type="votegroup" n="2">
+          <head rend="italic">Two Votes Each.</head>
+          <p><rs type="novel" ref="http://www.wikidata.org/entity/Q4736895">Alton Locke</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q353238">Kingsley</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q96374610">Cecil Dreeme</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q2418747">Winthrop</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q23307970">Charles Auchester</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q18537008">E. Berger</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q980534">Clarissa Harlowe</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q295941">Richardson</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q951198">Elective Affinities</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q5879">Goethe</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q67909796">Ekkehard</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q9082">Scheffel</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q7737514">The Grandissimes</rs>, <pb
+              n="5"/>
+            <rs type="author" ref="http://www.wikidata.org/entity/Q1508545">Cable</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141223767">The Guardian Angel</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q319829">Holmes</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141223775">John Brent</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q2418747">Winthrop</rs>, <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q6240780">John Inglesant</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q6283945">Shorthouse</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2633327">Liza</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q42831">Turgénieff</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q469690">Mansfield Park</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q36322">Austen</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q164974">Oliver Twist</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141222054">Put Yourself in his
+              Place</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q247473">Reade</rs>;
+              <rs type="novel" ref="http://www.wikidata.org/entity/Q141222033">A Princess of
+              Thule</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q1397722"
+            >Black</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q3521260">Sir Charles
+              Grandison</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q295941"
+              >Richardson</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q952340"
+              >Talisman</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q79025"
+              >Scott</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q5724762"
+            >Smoke</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q42831"
+              >Turgénieff</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q248096">Tom
+              Jones</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q34190"
+              >Fielding</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q1211109">Toilers
+              of the Sea</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q535">Victor
+              Hugo</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q141221989">Villa on
+              the Rhine</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q76715"
+              >Auerbach</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q678251"
+              >Waverly</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q79025"
+              >Scott</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q2298931">Debit and
+              Credit</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q58811"
+              >Freytag</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q8258">Arabian
+              Nights</rs>.</p>
+        </div>
+        <div type="votegroup" n="1">
+          <head rend="italic">One Vote Each.</head>
+          <p><rs type="novel" ref="http://www.wikidata.org/entity/Q4714138">Alec Forbes</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q368519">MacDonald</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141222688">Avis</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5363586">Phelps</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2717772">The Abbot</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q2740921">Albert Savarus</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q9711">Balzac</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q1170032">Au Bonheur des Dames</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2894491">Belinda</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q237575">Edgeworth</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q5114053" cert="medium">One of the
+              Barchester Set</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q124082051"
+              >Castle Daly</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q4769327"
+              >Annie Keary</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q265100"
+              >Cranford</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q229226">Mrs.
+              Gaskell</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q135662">Cupid and
+              Psyche</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q170512"
+              >Apuleius</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q5233331">David
+              Elginbrod</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q368519"
+              >MacDonald</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q141222637"
+              >Denis Duval</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q167768"
+              >Thackeray</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q29424">Fathers
+              and Sons</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q42831"
+              >Turgénieff</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q2282375"
+              >Flower, Fruit and Thorn Pieces</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q77079">Richter</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q5642996">Far from the Madding Crowd</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q132805">Hardy</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q124088237">The Gladiators</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5546247">Whyte Melvil</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2635218">Gil Blas</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q267962">Le Sage</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q17103798">Godolphin</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q318462">Bulwer</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141222435">Good Luck</rs>, <rs
+              type="author" subtype="misattributed" ref="http://www.wikidata.org/entity/Q90920"
+              >Reade</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q181488">Gulliver's
+              Travels</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q41166"
+            >Swift</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q219552">Great
+              Expectations</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q5686"
+              >Dickens</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q111239542">Hammer
+              and Anvil</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q106603"
+              >Spielhagen</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q1527881"
+              >Hesperus</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q77079"
+              >Richter</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q3203413">Humphrey
+              Clinker</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q356283"
+              >Smollett</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q2600597"
+              >Kenilworth</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q79025"
+              >Scott</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q7745622">Last
+              Chronicles of Barsetshire</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q318399">Trollope</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q30728806">Les Maitres Mosiastes</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q141222423">La Famille de
+              Germande</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q3816">George
+              Sand</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q2701079">Le Juif
+              Errant</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q315220">Sue</rs>;
+              <rs type="novel" ref="http://www.wikidata.org/entity/Q3795630">Le Roman d'un Jeune
+              Homme Pauvre</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q1091989"
+              >Feuillet</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q141222715">Life
+              for a Life</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q2331155"
+              >Craik</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q124084694">Love me
+              Little, Love me Long</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q247473">Reade</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q2607078">Mary Barton</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q229226">Gaskell</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q141222312">Maid of Athens</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q6317871">Justin McCarthy</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q1903609">Martin Chuzzlewit</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q865211">The Man Who Laughs</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q535">Victor Hugo</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q4658314">A Modern Instance</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q526709">Howells</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q112065103">My Novel</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q318462">Bulwer</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q19196710">The Nabob</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q228546">Daudet</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q1853142">North and South</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q229226">Gaskell</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q847642">Nicholas Nickleby</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2700616">The Old Curiosity
+            Shop</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>;
+              <rs type="novel" ref="http://www.wikidata.org/entity/Q141222482">The Perpetual
+              Curate</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q2415217"
+              >Oliphant</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q238652"
+              >Pathfinder</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q167856"
+              >Cooper</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q268211">Pilgrim's
+              Progress</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q108206"
+              >Bunyan</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q19895083">Peg
+              Woffington</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q247473"
+              >Reade</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q861017">Portrait of
+              a Lady</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q170509"
+            >James</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q124086102">Puck</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q258001">Ouida</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q1810877">Quintus Fixlein</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q77079">Richter</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q124086124">Quits</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q4862977">Tautphoeus</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2532000">Recherche de l'Absolu</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q9711">Balzac</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q7382844">Ruth</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q229226">Gaskell</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q115815108">Ravenshoe</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q322900">Kingsley</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q124090191" cert="medium">Shadow of
+              the Cross</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q5589250"
+              >Buchanan</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q2421868">Synnove
+              Solbaken</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q46405"
+              >Bjornsen</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q124082237"
+              >Schönberg-Cotta Family</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q16605371">Septimius <pb n="6"/> Felton</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q69339">Hawthorne</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q421615">Telemachus</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q310002">Fénelon</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q7815103">Tom Brown at Oxford</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q332580">Hughes</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q140527">The Three Guardsmen</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q38337">Dumas</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q7699351">Ten Thousand a Year</rs>,
+              <rs type="author" ref="http://www.wikidata.org/entity/Q7412884">Warren</rs>; <rs
+              type="novel" ref="http://www.wikidata.org/entity/Q2701079">The Wandering Jew</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q315220">Sue</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q3818437">The Warden</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q318399">Trollope</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q141222266">Zenobia</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q21555441">Ware</rs>; <rs type="novel"
+              ref="http://www.wikidata.org/entity/Q124084794" cert="medium">Nille Mori</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q58331721" cert="medium"
+              >Jeffreys</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q199940"
+              >Ninety-Three</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q535">Victor
+              Hugo</rs>; <rs type="novel" ref="http://www.wikidata.org/entity/Q141222394">The Ideal
+              Attained</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q5362126">Mrs.
+              Eliza W. Farnham</rs>.</p>
+        </div>
+      </div>
+      <div type="letters">
+        <head>THE LETTERS.</head>
+        <div type="response" n="1">
+          <opener><rs type="voter" xml:id="voter-anonymous"
+            ><persName>Anonymous</persName></rs>.</opener>
+          <p>In answer to your request for lists of ten best novels please accept the following from
+            a lover of good novels: <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q170583">Pride and Prejudice</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q678251">Waverly</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q102461080">The
+              Neighbors</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3400981">Lorna
+              Doone</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q847642"
+              >Nicholas Nickleby</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q124086124"
+            >Quits</rs>.</p>
+        </div>
+        <div type="response" n="2">
+          <opener><rs type="voter" xml:id="voter-adams-emma-s"
+              ref="http://www.wikidata.org/entity/Q141215610"><persName>Emma S. Adams</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p>If I were to write the names of the ten novels I most enjoyed reading, it would be an
+            easier task; but I suppose a <hi rend="italic">great</hi> novel should be not only
+            artistic as a novel, but inspiring in the lessons that it teaches; so that throws out of
+            the list novels like Miss <rs type="author" ref="http://www.wikidata.org/entity/Q36322"
+              >Austen</rs>'s, much as I admire them. As for novels in other languages, I can only
+            speak of French and German ones, and I do not think they compare favorably with our own,
+            even those of <rs type="author" ref="http://www.wikidata.org/entity/Q535">Victor
+              Hugo</rs> and <rs type="author" ref="http://www.wikidata.org/entity/Q62765"
+            >Ebers</rs>. I am even doubtful of including any of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>'s as <hi rend="italic"
+              >great</hi> novels, though I have decided on admitting one. I have avoided giving more
+            than one novel by any one writer, or else I fear I should not have gone beyond <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs> and <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>. <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3400981">Lorna Doone</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7723455">The Cloister
+              and the Hearth</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7989800">Amyas Leigh</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q124090191" cert="medium">The Shadow
+              of the Cross</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7745622">Last Chronicles of Barset</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141222482">The Perpetual
+              Curate</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>.</p>
+        </div>
+        <div type="response" n="3">
+          <opener><rs type="voter" xml:id="voter-allen-j-h"
+              ref="http://www.wikidata.org/entity/Q6283902"><persName>Rev. J. H. Allen</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
+              Mass.</placeName></rs>:</opener>
+          <p>It depends on which you take of three points of view—literary, ethical, or
+            psychological—meaning by the last a study of the author's mind. The second is the
+            simplest and perhaps what you mean. In any case for a class advanced enough, I should
+            wish to take one or more conspicuous and characteristic examples from each of several
+            languages and writers, say <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q28491">I <pb n="7"/> Promessi Sposi</rs> in
+            Italian, <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q4820313"
+              >Auf der Höhe</rs> in German, and in French <rs type="author"
+              ref="http://www.wikidata.org/entity/Q9711">Balzac</rs>'s <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2718088" cert="medium">Curé de
+              Campagne</rs>, or <rs type="author" ref="http://www.wikidata.org/entity/Q3816">George
+              Sand</rs>'s <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q40158430" cert="medium">Maitre Laurens</rs>. But
+            I should suppose that for your course, English novelists of the last thirty years was
+            quite wide sweep enough, and I should certainly wish to include specimens of writers
+            that wouldn't exactly come up to the mark of "noble"—such as <rs type="author"
+              ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q318399">Trollope</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q247473">Reade</rs>, and <rs type="author"
+              ref="http://www.wikidata.org/entity/Q3316148">Blackmore</rs>; thus I should quite
+            prefer <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q3400981"
+              >Lorna Doone</rs> to <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, and <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q7745622">The Last Chronicle of
+              Barset</rs> to <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, if one wants either
+            a natural or wholesome picture of life. But it's a dangerous sea to navigate in, if one
+            wants to save his critical reputation and sanity from wreck. If I were going to take
+            such a course I should be likely to include—off-hand and at a venture—<rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity
+            Fair</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q883305"
+              >Bleak House</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q5114053" cert="medium">One of the "Barchester"
+              Set</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141222054"
+              >Put Yourself in His Place</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q16385244">Caxtons</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1141732">Seven Gables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q28491">I Promessi
+              Sposi</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313"
+              >Auf der Höhe</rs>; but I might change half of these to-morrow; at all events,
+            substitute <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q2468609"
+              >Consuélo</rs> for one of them, and should try to get in something of <rs
+              type="author" ref="http://www.wikidata.org/entity/Q9711">Balzac</rs> and <rs
+              type="author" ref="http://www.wikidata.org/entity/Q42831">Turgénieff</rs>. You see I
+            go for variety and the widest study of life.</p>
+        </div>
+        <div type="response" n="4">
+          <opener><rs type="voter" xml:id="voter-allen-william-f"
+              ref="http://www.wikidata.org/entity/Q8009302"><persName>Prof. William F.
+                Allen</persName>, <orgName>University of Wisconsin</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q43788">Madison</placeName></rs>:</opener>
+          <p>I should have sent my list sooner, but found it difficult to decide upon the two last.
+            I debated the claims of the <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q907568">Scarlet Letter</rs>, <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q6240780">John Inglesant</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q121356927">Geoffrey
+              Hamlin</rs>, etc. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2288976">Guy Mannering</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The
+              Newcomes</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4714138">Alec Forbes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141222033">A Princess of Thule</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3400981">Lorna
+              Doone</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7989800"
+              >Amyas Leigh</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7723455">The Cloister and the
+              Hearth</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7737514">The Grandissimes</rs>.</p>
+        </div>
+        <div type="response" n="5">
+          <opener><rs type="voter" xml:id="voter-barrows-isabel-c"
+              ref="http://www.wikidata.org/entity/Q6077552"><persName>Mrs. Isabel C.
+                Barrows</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
+                >Boston</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q28491">I Promessi
+              Sposi</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031"
+              >Wilhelm Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q111239542">Hammer and Anvil</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q30728806">Les Maitres
+              Mosaistes</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480"
+              >Don Quixote</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, and do let me throw
+            in <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q5110688">Christie
+              Johnstone</rs>.</p>
+        </div>
+        <div type="response" n="6">
+          <opener><rs type="voter" xml:id="voter-bartol-c-a"
+              ref="http://www.wikidata.org/entity/Q66788920"><persName>Dr. C. A. Bartol</persName>,
+              of <placeName ref="http://www.wikidata.org/entity/Q100"
+            >Boston</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilheim
+              Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q951198">Elective Affinities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1157183">Antiquary</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3234969">Old Mortality</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2156104">Rob Roy</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the
+              Floss</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q638327"
+              >Silas Marner</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q9711"
+              >Balzac</rs>'s <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2532000">Recherche de l'Absolu</rs>, a wonderful
+            book.</p>
+        </div>
+        <pb n="8"/>
+        <div type="response" n="7">
+          <opener><rs type="voter" xml:id="voter-batchelor-george"
+              ref="http://www.wikidata.org/entity/Q111025423"><persName>Rev. George
+                Batchelor</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q952340"
+              >Talisman</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q460583">Pickwick</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The
+              Newcomes</rs>.</p>
+        </div>
+        <div type="response" n="8">
+          <opener><rs type="voter" xml:id="voter-beals-susie-b"><persName>Susie B. Beals</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q28848">St.
+            Paul</placeName></rs>:</opener>
+          <p>It has been hard work to keep to ten, but I send them, not in order as to my liking,
+            but somewhat as regards time in which they were written, and, as you said, for young
+            people. <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+              >Ivanhoe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q16385244">The
+              Caxtons</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736"
+              >Les Misérables</rs> (translated by Charles E. Wilbour), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q552238">Daniel
+              Deronda</rs>.</p>
+        </div>
+        <div type="response" n="9">
+          <opener><rs type="voter" xml:id="voter-bissell"><persName>Miss Bissell</persName>,
+                  <orgName><placeName ref="http://www.wikidata.org/entity/Q486877">South
+                  Bend</placeName> Public Schools</orgName>, Ind.</rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1215018">Mill on the Floss</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1557935">Our Mutual
+              Friend</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q5724762">Smoke</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q199940"
+              >Ninety-Three</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>.</p>
+        </div>
+        <div type="response" n="10">
+          <opener><rs type="voter" xml:id="voter-boyesen-j-k"
+              ref="http://www.wikidata.org/entity/Q141246256"><persName>Mrs. J. K.
+                Boyesen</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p>I herein enclose my list of ten novels. These have been chosen not so much for their
+            literary merit as for their <hi rend="italic">moral bearings</hi>. To me a novel must
+            portray real character and real social, political, or domestic problems to be
+            interesting; it must deal with characters,—their growth and susceptibilities. That hand
+            which can most skillfully direct the nerves of the mind and show most forcibly the
+            unconscious play and influence of environment upon our mental growth,—that hand to me is
+            the greatest, and I need hardly say that in this particular <rs type="author"
+              ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs> stands peerless. The
+            character of Tito Melema in "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>" is a never-ending study.
+            The key of the book is found in the one sentence, "<hi rend="italic">We prepare
+              ourselves for sudden deeds by the reiterated choice of good or evil that gradually
+              develops character.</hi>" Therein, it seems to me, lies the key of our own moral
+            growth. There are several works, such as "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q141222543">Faith Gartney's Girlhood</rs>" (<rs
+              type="author" ref="http://www.wikidata.org/entity/Q4681954">Mrs. Whitney</rs>), "<rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q141221582">Hedged
+              In</rs>" (<rs type="author" ref="http://www.wikidata.org/entity/Q5363586">Miss
+              Phelps</rs>), and "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q1448469">Old-Fashioned Girl</rs>" (<rs
+              type="author" ref="http://www.wikidata.org/entity/Q185696">Miss Alcott</rs>), that I
+            consider healthful and morally stimulating for young people to read; but they cannot,
+            strictly speaking, be called novels, I suppose. Let me call your attention to the last
+            work in my list. It is very simple and pure, but <pb n="9"/> I am told it is an
+            excellent portrayal of Norse peasant life. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity
+            Fair</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018"
+              >Newcomes</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141222033">A Princess of Thule</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223767">The
+              Guardian Angel</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4658314">A Modern Instance</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141222688">Avis</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2421868">Synnove
+              Solbaken</rs>.</p>
+        </div>
+        <div type="response" n="11">
+          <opener><rs type="voter" xml:id="voter-browne-e-l"><persName>Mrs. E. L. Browne</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q3143666">Hyde Park,
+              Ill.</placeName></rs>:</opener>
+          <p>How could you be so cruel as to ask only ten of my friends for admission to your Unity
+            Club, while the rest have to be left to the obscurity of the book-shelves? I have not
+            been quite true to myself in this list, as not all of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>'s novels are down. <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3693562"
+              >Corinne</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q6240780">John Inglesant</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>.</p>
+        </div>
+        <div type="response" n="12">
+          <opener><rs type="voter" xml:id="voter-bulkeley-b-r"
+              ref="http://www.wikidata.org/entity/Q141235240"><persName>Mrs. B. R.
+                Bulkeley</persName>, <placeName ref="http://www.wikidata.org/entity/Q523240"
+                >Concord, Mass.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q980534">Clarissa Harlow</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2469230">Quentin Durward</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane
+              Eyre</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2468609"
+              >Consuléo</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>.</p>
+        </div>
+        <div type="response" n="13">
+          <opener><rs type="voter" xml:id="voter-bullard-e-l"><persName>Mrs. E. L.
+                Bullard</persName>, <placeName ref="http://www.wikidata.org/entity/Q657748"
+                >Manchester, Mass.</placeName></rs>:</opener>
+          <p>Your list is a very hard one to make out. I enjoy and think your young people had
+            better read many a book which is not "great and noble." Half the definition would cover
+            a deal of English fiction—for instance, I think <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs> and <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs> great
+            books, but to my mind neither is noble. The enclosed list is the best I can make, but it
+            does not justly represent my opinions. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q16385982">Helen</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2607078">Mary Barton</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q115815108"
+              >Ravenshoe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q124084794"
+              cert="medium">Nille Mori</rs>.</p>
+        </div>
+        <div type="response" n="14">
+          <opener><rs type="voter" xml:id="voter-carpenter-h-bernard"
+              ref="http://www.wikidata.org/entity/Q5718111"><persName>Rev. H. Bernard
+                Carpenter</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
+                >Boston</placeName></rs>:</opener>
+          <p>As far as I can form a judgment in behalf of others, I have appended the names of those
+            novels I would recommend. Perhaps the list would be much modified if I had read the
+            books this year or even within the last five years. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1218985">Last Days of Pompeii</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q108665083">Egyptian
+              Princess</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q135662">Cupid and Psyche</rs> (<rs type="author"
+              ref="http://www.wikidata.org/entity/Q170512">Apuleius</rs>), <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q124088237">The Gladiator</rs> (<rs
+              type="author" ref="http://www.wikidata.org/entity/Q5546247">Whyte Melvil</rs>), <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1527881">Hesperus</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2701079">The Wandering
+              Jew</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don
+              Quixote</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q238652">The Pathfinder</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q483034">Robinson Crusoe</rs>.</p>
+        </div>
+        <pb n="10"/>
+        <div type="response" n="15">
+          <opener><rs type="voter" xml:id="voter-carruth-w-h"
+              ref="http://www.wikidata.org/entity/Q21664274"><persName>W. H. Carruth</persName>, of
+                <orgName>Kansas State University</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q493840">Lawrence,
+            Kans.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q883305">Bleak House</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961"
+              >Jane Eyre</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q865211">The Man Who Laughs</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141223775">John Brent</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2717772">The Abbot</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>.</p>
+        </div>
+        <div type="response" n="16">
+          <opener><rs type="voter" xml:id="voter-carruth-mrs-w-h"
+              ref="http://www.wikidata.org/entity/Q141235188"><persName>Mrs. W. H.
+                Carruth</persName>, <placeName ref="http://www.wikidata.org/entity/Q493840"
+                >Lawrence, Kans.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q883305">Bleak
+            House</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647"
+              >Hypatia</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141223775">John Brent</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">Marble Faun</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q6237289">John
+              Halifax</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
+        </div>
+        <div type="response" n="17">
+          <opener><rs type="voter" xml:id="voter-chadwick-john"
+              ref="http://www.wikidata.org/entity/Q15498332"><persName>Rev. John
+              Chadwick</persName>, <placeName ref="http://www.wikidata.org/entity/Q18419">Brooklyn,
+                N. Y.</placeName></rs>:</opener>
+          <p>A list of my personal preferences might be somewhat different, but it might include too
+            many from one author. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094"
+              >Heart of Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs> (Tauchnitz ed.), <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs> (Carlton's ed. is poorly translated, but I do not know of any better),
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7737514">The Grandissimes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q861017">Portrait of a Lady</rs>.</p>
+        </div>
+        <div type="response" n="18">
+          <opener><rs type="voter" xml:id="voter-clarke-james-freeman"
+              ref="http://www.wikidata.org/entity/Q323362"><persName>James Freeman
+              Clarke</persName>, of <placeName ref="http://www.wikidata.org/entity/Q100"
+                >Boston</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don
+            Quixote</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q483034"
+              >Robinson Crusoe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1196205">Vicar of Wakefield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+              >Ivanhoe</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q247473">Charles
+              Reade</rs>'s <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q124084694">Love Me Little Love Me Long</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031"
+              >Wilhelm Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222423">La Famille de Germande</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q638327">Silas
+              Marner</rs>.</p>
+        </div>
+        <div type="response" n="19">
+          <opener><rs type="voter" xml:id="voter-colegrove-james"
+              ref="http://www.wikidata.org/entity/Q141223951"><persName>James Colegrove</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279"
+            >Romola</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517"
+              >Henry Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the
+              Floss</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>. A good novel, and for some young people as good as any of the
+            above, though not a powerful one, is "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q13188959">An Old Story of my Farming Days</rs>,"
+            by <rs type="author" ref="http://www.wikidata.org/entity/Q76492">Fritz Reuter</rs>, one
+            I would in every way recommend to be read.</p>
+        </div>
+        <div type="response" n="20">
+          <opener><rs type="voter" xml:id="voter-collyer-robert"
+              ref="http://www.wikidata.org/entity/Q12702002"><persName>Robert Collyer</persName>, of
+                <placeName ref="http://www.wikidata.org/entity/Q60">New
+            York</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q6237289">John Halifax,
+              Gentleman</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7382844">Ruth</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q980534">Clarissa
+              Harlowe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
+        </div>
+        <div type="response" n="21">
+          <opener><rs type="voter" xml:id="voter-cooke-george-willis"
+              ref="http://www.wikidata.org/entity/Q15437653"><persName>George Willis
+                Cooke</persName>, <placeName ref="http://www.wikidata.org/entity/Q2304357">West
+                Dedham, Mass.</placeName></rs>:</opener>
+          <p>My list is made up of great novels without regard to the moral element you seem to wish
+            to include, and even then I believe it is preferable to that you print. No novel on my
+            list falls short of <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs> in this direction;
+            even <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q248096">Tom
+              Jones</rs>
+            <pb n="11"/> is more moral, though not so modern and thought-provoking a book. As a
+            piece of literary art, it surpasses any on your list. How can you leave out <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q480">Don
+            Quixote</rs>? <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don
+              Quixote</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q483034">Robinson
+              Crusoe</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q421615"
+              >Telemachus</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q248096">Tom Jones</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1196205">Vicar of Wakefield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2635218">Gil Blas</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3234969">Old
+              Mortality</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
+        </div>
+        <div type="response" n="22">
+          <opener><rs type="voter" xml:id="voter-crocker-lucretia"
+              ref="http://www.wikidata.org/entity/Q22017472"><persName>Miss Lucretia
+                Crocker</persName>, of the <orgName><placeName
+                  ref="http://www.wikidata.org/entity/Q100">Boston</placeName> Public
+                Schools</orgName></rs>:</opener>
+          <p>Your request is not easily complied with, for one hesitates to place even <hi
+              rend="italic">ten</hi> books as "the very best in the world's literature." After half
+            a dozen that could not be omitted from such a list, the number of good stories, good for
+            different reasons, multiplies so rapidly that it is difficult to select any one in
+            preference to a dozen others, except as one has regard to the requirement of particular
+            readers. What I should specially select for one young person I should not give to
+            another. <rs type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>,
+            for instance, has a bitterness and a satirical or cynical flavor I would not give to
+            many young people; and yet, not to include him seems almost like excluding an English
+            classic. Again, descriptions of daily life in different localities, as Miss <rs
+              type="author" ref="http://www.wikidata.org/entity/Q262145">Bremer</rs>'s "<rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q102461080"
+              >Neighbors</rs>," "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q124086124">Quits</rs>" and other German tales;
+            middle-age pictures of knights, armor, etc., in which <rs type="author"
+              ref="http://www.wikidata.org/entity/Q1508054">G. P. R. James</rs> excels; <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167856">Cooper</rs>'s tales of
+            Indian life; fiction founded on the progressive ideas of this and earlier times, as <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q89518165">Old
+              Ma'mselle's Secret</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q124082237">Schönberg-Cotta Family</rs>, etc.;
+            books of purely dramatic interest, as <rs type="author"
+              ref="http://www.wikidata.org/entity/Q210740">Wilkie Collins</rs>'s <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2362563">Moonstone</rs>, etc.;
+            home life and development of today, as in <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q141222543">Faith Gartney</rs>,—all these and many
+            others crowd upon the thoughts. These are reasons why you give a hard task; but as you
+            say, "name no more than ten," I send a list, not committing myself to stand by it should
+            a similar decision be attempted again, after a little time. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q112065103">My Novel</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q16385982"
+            >Helen</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1903609"
+              >Martin Chuzzlewit</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222266">Zenobia</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">The Marble Faun</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q124082237">The
+              Schönberg-Cotta Family</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q102461080">The Neighbors</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2298931">Debit and Credit</rs>.</p>
+        </div>
+        <div type="response" n="23">
+          <opener><rs type="voter" xml:id="voter-davidson-thomas"
+              ref="http://www.wikidata.org/entity/Q3525030"><persName>Prof. Thomas
+                Davidson</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
+                >Boston</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q67909796"
+              >Ekkehard</rs> (translation), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q28491">I Promessi Sposi</rs> (translation), <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q5442230">Felix
+              Holt</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1170032"
+              >Au <pb n="12"/> Bonheur des Dames</rs> (translation), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs> (translation), <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q19895083">Peg
+              Woffington</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>.</p>
+        </div>
+        <div type="response" n="24">
+          <opener><rs type="voter" xml:id="voter-dole-c-f"
+              ref="http://www.wikidata.org/entity/Q5077709"><persName>C. F. Dole</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q985993">Jamaica Plain,
+                Mass.</placeName></rs>:</opener>
+          <p>I am not at all sure that if I were to be asked for the ten <hi rend="italic"
+              >greatest</hi> novels I should make the same list in all respects as when asked for
+            the ten which are the <hi rend="italic">noblest</hi>. <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q7815103">Tom Brown</rs>, for example, seems to me
+            a very noble story, but whether it is one of the greatest I am not sure; nor again,
+            whether <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q3222702"
+              >The Marble Faun</rs>, which is great, is also noble enough. <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647"
+              >Hypatia</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7815103"
+              >Tom Brown at Oxford</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">The Marble
+              Faun</rs>.</p>
+        </div>
+        <div type="response" n="25">
+          <opener><rs type="voter" xml:id="voter-everett-c-c"
+              ref="http://www.wikidata.org/entity/Q5076120"><persName>Prof. C. C.
+              Everett</persName>, Dean of the <orgName><placeName
+                  ref="http://www.wikidata.org/entity/Q49111">Cambridge</placeName> Divinity
+                School</orgName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1157183"
+              >Antiquary</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the Floss</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018"
+              >Newcomes</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q124082051">Castle Daly</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3818437">The
+            Warden</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>.</p>
+        </div>
+        <div type="response" n="26">
+          <opener><rs type="voter" xml:id="voter-follansbee-susie-d"><persName>Mrs. Susie D.
+                Follansbee</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p>For me these novels are the <hi rend="italic">great</hi> ones, but I would like to say
+            that there are some among them that I should not think it wise to give to the average
+            young person: <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031"
+              >Wilhelm Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q5442230">Felix
+              Holt</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836"
+              >Vanity Fair</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q883305">Bleak House</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q96374610">Cecil Dreeme</rs>.</p>
+        </div>
+        <div type="response" n="27">
+          <opener><rs type="voter" xml:id="voter-fort-phoebe"><persName>Miss Phœbe Fort</persName>,
+                  <orgName><placeName ref="http://www.wikidata.org/entity/Q2008706"
+                  >Elkhart</placeName> Public Schools</orgName>, Ind.</rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the Floss</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q883305">Bleak
+              House</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2469230"
+              >Quentin Durward</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1218985">The Last Days
+              of Pompeii</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>.</p>
+        </div>
+        <div type="response" n="28">
+          <opener><rs type="voter" xml:id="voter-freeman-j-c"
+              ref="http://www.wikidata.org/entity/Q141235226"><persName>Prof. J. C.
+                Freeman</persName>, Professor of English Literature at <orgName>State
+                University</orgName>, <placeName ref="http://www.wikidata.org/entity/Q43788"
+                >Madison, Wis.</placeName></rs>:</opener>
+          <p>What a high Calvinist you are! "Only ten" admitted to the heaven of your elect. Among
+            the partisans of the hustled-out there will be what weeping and wailing and gnashing of
+            teeth! I am of course inclined to put down novels marking epochs in the development of
+            the novel. I made a dash at it and my list was <pb n="13"/> twenty-five. Another, and
+            got sixteen. I strike off six. "The noblest," eh? Then <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q248096">Tom Jones</rs> will have to go, in some
+            respects, perhaps, the most perfect novel of them all. <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q2600597">Kenilworth</rs> will have to go too—no
+            character in it as <hi rend="italic">noble</hi> as Jeanie Deans. There is dear old <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q460583"
+            >Pickwick</rs>—he is not noble of course, but we couldn't get on without him; and <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q189811"
+              >Copperfield</rs>—why <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q189811">Copperfield</rs>? On account of Agnes,
+            the salt of the earth. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1196205">The Vicar of Wakefield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1218985">Last Days of
+              Pompeii</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q460583">Pickwick Papers</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1141732">House of
+              Seven Gables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
+        </div>
+        <div type="response" n="29">
+          <opener><rs type="voter" xml:id="voter-furness-w-e"
+              ref="http://www.wikidata.org/entity/Q94259148"><persName>W. E. Furness,
+                Esq.</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3234969">Old
+              Mortality</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7989800">Westward Ho</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3521260">Sir Charles
+              Grandison</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q308918">A Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q5442230">Felix
+            Holt</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The
+              Scarlet Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1218985">The Last Days of Pompeii</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7723455">The Cloister
+              and the Hearth</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q469690">Mansfield Park</rs>.</p>
+        </div>
+        <div type="response" n="30">
+          <opener><rs type="voter" xml:id="voter-giles-ella-a"
+              ref="http://www.wikidata.org/entity/Q56096292"><persName>Miss Ella A.
+              Giles</persName>, <placeName ref="http://www.wikidata.org/entity/Q43788">Madison,
+                Wis.</placeName></rs>:</opener>
+          <p>Nearly five years' experience in a free public library has impaired my critical
+            faculties. The real demand, in a large majority of cases, being for "something new," and
+            the old and standard works being so often rejected, if not despised, has caused me to be
+            somewhat skeptical when people furnish lists of those books only which it sounds well to
+            call "the best." There is much literary superstition, bigotry and narrowness in this
+            matter of fiction. May there not also be some insincerity, hesitation to give an opinion
+            lest it conflict with popular ideas, etc.? Some people approve <rs type="author"
+              ref="http://www.wikidata.org/entity/Q258001">Ouida</rs>'s novels far more highly than
+            they own. Others, who object to them most strongly, have never read them. While her
+            books deserve some of the censure they get, there is, I think, more prejudice afloat
+            than should exist among the really intelligent.</p>
+          <p>But here is my list: <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141221989">Villa on the Rhine</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1218985">Last Days of
+              Pompeii</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q124086102">Puck</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222054">Put Yourself in His Place</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane
+            Eyre</rs>.</p>
+        </div>
+        <div type="response" n="31">
+          <opener><rs type="voter" xml:id="voter-gilman-n-p"
+              ref="http://www.wikidata.org/entity/Q18239172"><persName>N. P. Gilman</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q2049231">Wayland,
+              Mass.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>,
+              <pb n="14"/>
+            <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1810877">Quintus Fixlein</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q469690">Mansfield Park</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223767">The Guardian
+              Angel</rs>.</p>
+        </div>
+        <div type="response" n="32">
+          <opener><rs type="voter" xml:id="voter-gordon-e-e"
+              ref="http://www.wikidata.org/entity/Q56248073"><persName>Miss E. E. Gordon</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q264605">Humboldt,
+              Iowa</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1215018"
+              >Mill on the Floss</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q313129">Middlemarch</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3222702">The Marble Faun</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the
+              Heights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1557935">Our Mutual Friend</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q5233331">David Elginbrod</rs>.</p>
+        </div>
+        <div type="response" n="33">
+          <opener><rs type="voter" xml:id="voter-greeley-samuel-s"
+              ref="http://www.wikidata.org/entity/Q141224134"><persName>Samuel S. Greeley,
+                Esq.</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2468609"
+              >Consuélo</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7772832">The Virginians</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2701079">Le Juif Errant</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2282375">Flower, Fruit and Thorn Pieces</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4736895">Alton
+              Locke</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141221964">Margaret</rs>.</p>
+        </div>
+        <div type="response" n="34">
+          <opener><rs type="voter" xml:id="voter-griswold-hattie-tyng"
+              ref="http://www.wikidata.org/entity/Q29920448"><persName>Mrs. Hattie Tyng
+                Griswold</persName>, <placeName ref="http://www.wikidata.org/entity/Q1570063"
+                >Columbus, Wis.</placeName></rs>:</opener>
+          <p>Should have liked to put in all the rest of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs> and the most of <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs> and <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>. <rs
+              type="author" ref="http://www.wikidata.org/entity/Q79025">Scott</rs> was never a
+            favorite with me. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q313129"
+            >Middlemarch</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q883305">Bleak House</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836"
+              >Vanity Fair</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>.</p>
+        </div>
+        <div type="response" n="35">
+          <opener><rs type="voter" xml:id="voter-hale-edward-everett"
+              ref="http://www.wikidata.org/entity/Q786616"><persName>Edward Everett Hale</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q100"
+            >Boston</placeName></rs>:</opener>
+          <p>With regard to the first of these there is, I think, no question. <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q483034">Robinson Crusoe</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961"
+              >Jane Eyre</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q308918">A Tale of Two Cities</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q8258">The Arabian
+              Nights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>. I should consider the
+            education of any young person neglected till he had read these carefully. On the other
+            hand, whoever has wholly learned what these could teach has little left to learn of the
+            first importance. To make up your ten I will add <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, Miss <rs
+              type="author" ref="http://www.wikidata.org/entity/Q36322">Austen</rs>'s <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q170583">Pride and
+              Prejudice</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q38337"
+              >Dumas</rs>' <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q140527"
+              >Three Guardsmen</rs>. The last simply to show the value of pure narrative.</p>
+        </div>
+        <div type="response" n="36">
+          <opener><rs type="voter" xml:id="voter-harris-w-t"
+              ref="http://www.wikidata.org/entity/Q5791238"><persName>Prof. W. T. Harris</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q523240">Concord,
+              Mass.</placeName></rs>:</opener>
+          <p>I would name the following, after much hesitation in regard to the extent of meaning
+            which the term "novel" may have properly. I think that <rs type="author"
+              ref="http://www.wikidata.org/entity/Q79025">Walter Scott</rs> alone could furnish the
+            ten greatest novels, and perhaps twenty that are greater than any others. If one is to
+            name, however, only ten, they should furnish the point of view (Welt-Anschaung, as the
+            Germans call it) of as many individualities as possible. I have accordingly named the
+            following (excluding, reluctantly, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q141221989">Villa on the
+            Rhine</rs>, and <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>): <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>
+            (Carlyle's <pb n="15"/> translation, supplemented by Bell's translation of the <hi
+              rend="italic">Travels</hi>, in Bohn's Library, complete), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1196205">Vicar of Wakefield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2156104">Rob Roy</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">Marble Faun</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>
+            and sequel, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279"
+              >Romola</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q181488">Gulliver's Travels</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q483034">Robinson
+              Crusoe</rs>.</p>
+        </div>
+        <div type="response" n="37">
+          <opener><rs type="voter" xml:id="voter-hedge-frederic-h"
+              ref="http://www.wikidata.org/entity/Q5497046"><persName>Dr. Frederic H.
+                Hedge</persName>, <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
+                Mass.</placeName></rs>:</opener>
+          <p>Your request to name ten of the best novels, or ten great novels, is not easy to comply
+            with. There are different types of novels, which are incommensurable, and under some of
+            the types a dozen which are equally good. I will name the ten which first occur to me.
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3521260">Sir Charles
+              Grandison</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1196205">The Vicar of Wakefield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2288976">Guy
+              Mannering</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1157183">The Antiquary</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2156104">Rob Roy</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3234969">Old
+              Mortality</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2091094">The Heart of Mid-Lothian</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q17103798"
+              >Godolphin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2894491">Belinda</rs>. I do not name <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>
+            or <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q2635218">Gil
+              Blas</rs>, which are great works, but not what is commonly understood by a novel. <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q248096">Tom
+              Jones</rs> and <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q7712607">Peregrine Pickle</rs> are great among
+            English classics, but not to be recommended to young people. <rs type="author"
+              ref="http://www.wikidata.org/entity/Q1064">Manzoni</rs>'s <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q28491">Betrothed</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5879">Goethe</rs>'s <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs> and his <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q951198">Elective Affinities</rs> are among the
+            greatest, but not easily accessible to English readers. I have not named <rs
+              type="author" ref="http://www.wikidata.org/entity/Q167768">Thackeray</rs>'s or <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>'s, or
+              "<rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q182961">Jane
+              Eyre</rs>," because, although they possess great merit, I do not account them quite
+            equal to those which I have specified. I should certainly mention <rs type="author"
+              ref="http://www.wikidata.org/entity/Q7647785">Mrs. Ferrier</rs>'s <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q60172765">Inheritance</rs> and
+            Miss <rs type="author" ref="http://www.wikidata.org/entity/Q36322">Austen</rs>'s <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q170583">Pride and
+              Prejudice</rs> had you not restricted my choice to ten. Some of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q318399">Trollope</rs>'s, especially "<rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q7731161">The Duke's
+              Children</rs>," I omit for the same reason.</p>
+        </div>
+        <div type="response" n="38">
+          <opener><rs type="voter" xml:id="voter-hiscock-h-m"><persName>Mrs. H. M.
+                Hiscock</persName>, <placeName ref="http://www.wikidata.org/entity/Q16554">Denver,
+                Colo.</placeName></rs>:</opener>
+          <p>I am greatly obliged for the <hi rend="italic">Ten Great Novels</hi>' interest. I read
+            them all so long ago it is a pleasant reminiscence, and has already resulted in
+            arranging to re-read <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs> with a delightful
+            friend. I should have put <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>
+            <hi rend="italic">first</hi> and should not have defined its chief merits as "French
+            life in the lower ranks," but the <hi rend="italic">power of conscience</hi>, for the
+            mental struggles of Jean Valjean were to me the most wonderful portions of the book. I
+            think I should have included some of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q859">Plato</rs>'s Dialogues, for I know nothing
+            richer. I laughed aloud to myself this morning over Theætetus.</p>
+        </div>
+        <pb n="16"/>
+        <div type="response" n="39">
+          <opener><rs type="voter" xml:id="voter-holmes-israel"><persName>Mrs. Israel
+                Holmes</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q552238">Daniel
+              Deronda</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q5442230">Felix Holt</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7699351">Ten Thousand a Year</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane
+            Eyre</rs>.</p>
+        </div>
+        <div type="response" n="40">
+          <opener><rs type="voter" xml:id="voter-hosmer-j-k"
+              ref="http://www.wikidata.org/entity/Q6137218"><persName>Prof. J. K. Hosmer</persName>,
+              Professor of German Literature in <orgName>Washington University</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q38022">St. Louis,
+            Mo.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q951198">Elective
+              Affinities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3795630">Le Roman d'un
+              Jeune Homme Pauvre</rs>.</p>
+        </div>
+        <div type="response" n="41">
+          <opener><rs type="voter" xml:id="voter-howe-grace"><persName>Miss Grace Howe</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q462161">Kenosha,
+              Wis.</placeName></rs>:</opener>
+          <p>I send you the following list of novels, not because I think them the best in every
+            case, but the best for such a purpose. If I were to choose the best, I should take three
+            or four of <rs type="author" ref="http://www.wikidata.org/entity/Q167768"
+            >Thackeray</rs>'s and certainly three of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>'s as the best novels I ever
+            read; but for such a list as you want, more variety is desirable. I <hi rend="italic"
+              >think</hi> to this list should be added one of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q3816">George Sand</rs>'s, but as I never read one
+            I cannot tell. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7772832">The Virginians</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3793666">The Minister's Wooing</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2288976">Guy Mannering</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>.</p>
+        </div>
+        <div type="response" n="42">
+          <opener><rs type="voter" xml:id="voter-hubbard-sara-a"><persName>Mrs. Sara A.
+                Hubbard</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p>I do not like to say of any list I might make that they are the best novels in the
+            world's literature. That would require a far wider and more studious reading of fiction
+            than I have done. My favorites among novels in the English tongue are as follows: <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q6237289">John
+              Halifax, Gentleman</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="author" ref="http://www.wikidata.org/entity/Q108206"
+            >Bunyan</rs>'s <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q268211"
+              >Pilgrim's Progress</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q483034">Robinson Crusoe</rs>. These are not set
+            down in the order of preference, but rather as they occur to me. I hesitated much over
+            the last two, for the choice is difficult.</p>
+        </div>
+        <div type="response" n="43">
+          <opener><rs type="voter" xml:id="voter-johnson-f-a"><persName>Mrs. F. A.
+                Johnson</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the
+              Heights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+              >Ivanhoe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+            Mid-Lothian</rs>.</p>
+        </div>
+        <pb n="17"/>
+        <div type="response" n="44">
+          <opener><rs type="voter" xml:id="voter-jones-j-ll"
+              ref="http://www.wikidata.org/entity/Q6177549"><persName>J. Ll. Jones</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279"
+              >Romola</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q883305">Bleak House</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the
+              Heights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>.</p>
+        </div>
+        <div type="response" n="45">
+          <opener><rs type="voter" xml:id="voter-jones-s-c-ll"
+              ref="http://www.wikidata.org/entity/Q62026508"><persName>Mrs. S. C. Ll.
+                Jones</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1853142">North and
+              South</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222715">A Life for a Life</rs>.</p>
+        </div>
+        <div type="response" n="46">
+          <opener><rs type="voter" xml:id="voter-king-c-b"><persName>Mrs. C. B. King</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the
+              Heights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
+        </div>
+        <div type="response" n="47">
+          <opener><rs type="voter" xml:id="voter-learned-j-c"
+              ref="http://www.wikidata.org/entity/Q94662903"><persName>Rev. J. C.
+              Learned</persName>, <placeName ref="http://www.wikidata.org/entity/Q38022">St.
+                Louis</placeName></rs>:</opener>
+          <p>The justice and worth of any one's decision depends upon many conditions, of course;
+            but in case of any one who deserves to be consulted as to the best <hi rend="italic">ten
+              novels</hi>, I think he ought to accompany his choice with a statement of the novels
+              <hi rend="italic">he hasn't read</hi>. I will send ten, and I will send other ten, a
+            list in print, in which selection (made up in this city) I did my fractional part. See
+            Public School Library Bulletin. But in spite of your saying "only ten" I will name a few
+            that I haven't read, as possibly the reason why they could and should not appear in the
+            requested list. I haven't read <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>, <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q7162382"
+              >Pendennis</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2469230">Quentin Durward</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q112065103">My
+              Novel</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q3148485">Dr. Antonio</rs>, <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q907568">Scarlet Letter</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q191838">Count of
+              Monte Christo</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q2701079">Wandering Jew</rs>. A list which I <hi
+              rend="italic">suspect</hi> is nearly as good, in some instances better, than the one I
+            send on the next page. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the
+              Floss</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2600597"
+              >Kenilworth</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">Marble
+              Faun</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q23307970">Charles Auchester</rs>.</p>
+        </div>
+        <div type="response" n="48">
+          <opener><rs type="voter" xml:id="voter-lewis-mary-thorn"
+              ref="http://www.wikidata.org/entity/Q126001998"><persName>Miss Mary Thorn
+                Lewis</persName>, President of the <orgName>New Century Club</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q1345">Philadelphia</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q170583"
+              >Pride and Prejudice</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q265100">Cranford</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q6240780">John
+              Inglesant</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q5642996">Far from the Madding Crowd</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q16385982">Helen</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2633327">Liza</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3400981">Lorna Doone</rs>.</p>
+        </div>
+        <div type="response" n="49">
+          <opener><rs type="voter" xml:id="voter-long-lily-a"
+              ref="http://www.wikidata.org/entity/Q70278553"><persName>Miss Lily A. Long</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q28848">St. Paul,
+              Minn.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q678251"
+            >Waverly</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q952340"
+              >Talisman</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7162382">Pendennis</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1557935">Our Mutual
+              Friend</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q164974"
+              >Oliver Twist</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">The Marble
+              Faun</rs>.</p>
+        </div>
+        <pb n="18"/>
+        <div type="response" n="50">
+          <opener><rs type="voter" xml:id="voter-mceroy-h"
+              ref="http://www.wikidata.org/entity/Q141224997"><persName>H. McEroy</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q257536">Janesville,
+              Wis.</placeName></rs>:</opener>
+          <p>Some works in the list I offer you may be subjects of criticism, and may be regarded as
+            not just the most wholesome mental <hi rend="italic">pabulum</hi> for a reading society.
+            I select them, however, because I believe them to be the best; and my list is as
+            follows: <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q248096">Tom
+              Jones</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203413"
+              >Humphrey Clinker</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">Newcomes</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141222637">Denis
+              Duval</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736"
+              >Les Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q16605371">Septimius Felton</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2740921">Albert
+              Savarus</rs>. I add the uncompleted works <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q141222637">Denis Duval</rs> and <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q16605371">Septimius Felton</rs>
+            for the reason that the reader will learn from them in a great measure the peculiar
+            methods of the authors in framing their stories. The little tale of <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2740921">Albert Savarus</rs> is
+            one of the best and cleanest of <rs type="author"
+              ref="http://www.wikidata.org/entity/Q9711">Balzac</rs>'s tales, and will be found in a
+            recent review of the Comédie Humaine.</p>
+        </div>
+        <div type="response" n="51">
+          <opener><rs type="voter" xml:id="voter-mcmahan-a-b"
+              ref="http://www.wikidata.org/entity/Q103982195"><persName>Mrs. A. B.
+                McMahan</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
+                Ill.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the
+              Floss</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279"
+              >Romola</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">The Marble
+              Faun</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568"
+              >The Scarlet Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q308918">Tale of Two Cities</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>.</p>
+        </div>
+        <div type="response" n="52">
+          <opener><rs type="voter" xml:id="voter-marean-emma-e"
+              ref="http://www.wikidata.org/entity/Q138654833"><persName>Mrs. Emma E.
+                Marean</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918"
+              >Tale of Two Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+            >Ivanhoe</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568"
+              >The Scarlet Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
+        </div>
+        <div type="response" n="53">
+          <opener><rs type="voter" xml:id="voter-marean-mary-b"><persName>Mrs. Mary B.
+                Marean</persName>, <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
+                Mass.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1211109">Toilers of the Sea</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q28491">I Promessi Sposi</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
+        </div>
+        <div type="response" n="54">
+          <opener><rs type="voter" xml:id="voter-mead-edwin-d"
+              ref="http://www.wikidata.org/entity/Q83982479"><persName>Edwin D. Mead</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q100"
+            >Boston</placeName></rs>:</opener>
+          <p>The following cover some of the "very best" at any rate: <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2298931">Soll und Haben</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q492384">Titan</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The
+              Newcomes</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>.</p>
+        </div>
+        <div type="response" n="55">
+          <opener><rs type="voter" xml:id="voter-safford-mary-a"
+              ref="http://www.wikidata.org/entity/Q56248084"><persName>Rev. Mary A.
+                Safford</persName>, <placeName ref="http://www.wikidata.org/entity/Q264605"
+                >Humboldt, Iowa</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q883305">Bleak
+            House</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961"
+              >Jane Eyre</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3222702">Marble Faun</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q313129"
+              >Middlemarch</rs>.</p>
+        </div>
+        <div type="response" n="56">
+          <opener><rs type="voter" xml:id="voter-sawyer-frances-p"
+              ref="http://www.wikidata.org/entity/Q141247822"><persName>Frances P.
+              Sawyer</persName>, <placeName ref="http://www.wikidata.org/entity/Q28848">St. Paul,
+                Minn.</placeName></rs>:</opener>
+          <p>Perhaps these are not the <hi rend="italic">greatest</hi> novels, but I think they are
+            in one way and <pb n="19"/> another helpful to young people. Would like to add some of
+              <rs type="author" ref="http://www.wikidata.org/entity/Q3816">George Sand</rs>'s books,
+            which I think wonderful, but it is so long since I read them I dare not say surely which
+            are <hi rend="italic">the</hi> ones. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2288976">Guy
+              Mannering</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7772832">The Virginians</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141221964">Margaret</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1211109">Toilers of the Sea</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>.</p>
+        </div>
+        <div type="response" n="57">
+          <opener><rs type="voter" xml:id="voter-shackford-c-c"
+              ref="http://www.wikidata.org/entity/Q21600517"><persName>Prof. C. C.
+                Shackford</persName>, of <orgName>Cornell University</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q217346">Ithaca, N.
+            Y.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don
+            Quixote</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313"
+              >On the Heights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q23307970">Charles Auchester</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q102461080">The Neighbors</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141221964"
+            >Margaret</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+            >Ivanhoe</rs>.</p>
+        </div>
+        <div type="response" n="58">
+          <opener><rs type="voter" xml:id="voter-shedd-helen-s"
+              ref="http://www.wikidata.org/entity/Q141224928"><persName>Mrs. Helen S.
+                Shedd</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry
+              Esmond</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2633327">Liza</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141221989">Villa on the Rhine</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q492384">Titan</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q108665083">Egyptian
+              Princess</rs>.</p>
+        </div>
+        <div type="response" n="59">
+          <opener><rs type="voter" xml:id="voter-shorey-m-a"><persName>Mrs. M. A. Shorey</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q313129"
+              >Middlemarch</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4736895">Alton
+              Locke</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568"
+              >The Scarlet Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q219552">Great Expectations</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>.</p>
+        </div>
+        <div type="response" n="60">
+          <opener><rs type="voter" xml:id="voter-simmons-h-m"
+              ref="http://www.wikidata.org/entity/Q55720818"><persName>H. M. Simmons</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q36091"
+            >Minneapolis</placeName></rs>:</opener>
+          <p>Don't ask me about "novels" or "philosophy," for I don't know a thing about either.
+            Take this bit, however: A lady in Kenosha the other day told me of asking a cultivated
+            German what was the best novel in his own literature, and he answered without the least
+            hesitation, "<rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q67909796">Ekkehard</rs>." She was reading it with
+            much delight. Her copy was in German, but I suppose it must be translated, and that is
+            all I know about it.</p>
+        </div>
+        <div type="response" n="61">
+          <opener><rs type="voter" xml:id="voter-smith-fayette"
+              ref="http://www.wikidata.org/entity/Q28954490"><persName>Mrs. Fayette
+              Smith</persName>, <placeName ref="http://www.wikidata.org/entity/Q43196"
+                >Cincinnati</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7162382"
+              >Pendennis</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q170583">Pride and Prejudice</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>.</p>
+        </div>
+        <div type="response" n="62">
+          <opener><rs type="voter" xml:id="voter-staples-c-j"
+              ref="http://www.wikidata.org/entity/Q141224433"><persName>Rev. C. J.
+                Staples</persName>, <placeName ref="http://www.wikidata.org/entity/Q2318684"
+                >Reading, Mass.</placeName></rs>:</opener>
+          <p>The great novels are not always the noblest—are they?—for noble has something of a
+            moral element in it, and a novel may lie in the first rank artistically and yet have
+            small uplifting power. The best novel as novel is that which tells its story best,
+            though that story be none of the sweetest and pleasantest. These are ten very great
+            novels to my mind: <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3222702">The Marble <pb n="20"/> Faun</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+              >Ivanhoe</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q638327">Silas Marner</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1196205">The Vicar of
+              Wakefield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q96374610">Cecil Dreeme</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2700616">Old Curiosity
+              Shop</rs>. Were I to distinguish those that produced most impression on me personally
+            I should substitute <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs> for <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, omit <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>
+            and the <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q1196205"
+              >Vicar of Wakefield</rs>, to put in their place <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs> and <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q6237289">John
+              Halifax</rs> and substitute <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs> for <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs> and <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs> for <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q2700616">Old Curiosity Shop</rs>. Still I think
+            it can be said of the first list that one cannot grow tired of re-reading them.</p>
+        </div>
+        <div type="response" n="63">
+          <opener><rs type="voter" xml:id="voter-stebbins-giles-b"
+              ref="http://www.wikidata.org/entity/Q141224446"><persName>Giles B.
+              Stebbins</persName>, <placeName ref="http://www.wikidata.org/entity/Q12439">Detroit,
+                Mich.</placeName></rs>:</opener>
+          <p>"Ten great novels"—or rather ten novels opening into as many phases of thought and
+            life, and so helping to widen and instruct and inspire—I give, as follows: <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q108665083">The Egyptian
+              Princess</rs>, for life in old Egypt; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q102461080">The Neighbors</rs>, for the domestic
+            and affectional aspects of Swedish life; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q535">Victor Hugo</rs>'s insight and charity and
+            glowing French pictures; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q79025">Walter Scott</rs>'s story of
+            Scotch life and sisterly devotedness; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, his picture of feudal days,
+            with Norman and Saxon and Jew in the foreground, and the beautiful Rebecca filling all
+            hearts with reverent tenderness; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>, <rs type="author"
+              ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>'s story of the outward
+            splendor and the inner life of Italy in the day of Savonarola; <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q164974">Oliver Twist</rs>, <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5686">Dickens</rs>' life among the
+            poor of England; <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, a revelation of slavery as it was; <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3793666">The Minister's Wooing</rs>,
+            the outer and inner life of Puritanism; <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222394">The Ideal Attained</rs>, (by <rs
+              type="author" ref="http://www.wikidata.org/entity/Q5362126">Mrs. Eliza W.
+            Farnham</rs>), a noble ideal of wedded life. Easily could the list be lengthened. Had
+            you asked for a hundred little novels a thousand could be found, for weeds grow fast.
+            But they die as soon, while oaks and palms endure. The wheat gains while the chaff is
+            blowing away. Your asking for the golden grain will help the winnowing we need.</p>
+        </div>
+        <div type="response" n="64">
+          <opener><rs type="voter" xml:id="voter-sunderland-j-t"
+              ref="http://www.wikidata.org/entity/Q52155288"><persName>J. T. Sunderland</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q485172">Ann Arbor,
+              Mich.</placeName></rs>:</opener>
+          <p>You ask me to make out a list of what I conceive to be the ten greatest novels of the
+            world. This is harder to do than it otherwise <pb n="21"/> would be, because you do not
+            indicate by what standard you would have them measured—that of their literary merits,
+            that of their moral purpose, that of their fame, or that of their influence. In making
+            out my list I am guided somewhat by all four standards, the superiority of some of the
+            novels named being of one kind and that of others of other kinds. <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's
+              Cabin</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046"
+              >Adam Bede</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q7162382">Pendennis</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q460583">Pickwick Papers</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
+              Falconer</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480"
+              >Don Quixote</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
+        </div>
+        <div type="response" n="65">
+          <opener><rs type="voter" xml:id="voter-tolman-harriet-s"
+              ref="http://www.wikidata.org/entity/Q141224499"><persName>Harriet S.
+              Tolman</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
+                >Boston</placeName></rs>:</opener>
+          <p>Your note has led to an interesting discussion with some of my friends. They agree with
+            me that your question is not easily answered. It is hard to sift the number of valuable
+            novels to just ten, and sometimes sacrifices have to be made because of a want in a high
+            degree of one or the other of the two qualifications which are necessary to full
+            greatness—artistic excellence, and the power of exciting noble aspirations or
+            conceptions of life. I should like to send you a list of "second choices"—this seems so
+            cruelly exclusive—but forbear, according to directions. Perhaps I ought to add that my
+            list has been modified by the opinions of the friends with whom I talked. <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279"
+            >Romola</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q3522018"
+              >The Newcomes</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q6237289">John
+              Halifax</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2449570">Villette</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+            >Ivanhoe</rs>. If authors are not to be repeated, omit <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q7363279">Romola</rs> and <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs> and
+            insert <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q2468609"
+              >Consuélo</rs> and <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>.</p>
+        </div>
+        <div type="response" n="66">
+          <opener><rs type="voter" xml:id="voter-tunis-agatha"><persName>Mrs. Agatha
+                Tunis</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
+                Ill.</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
+              Meister</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480"
+              >Don Quixote</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3203517">Henry Esmond</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918">Tale of Two
+              Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1215018">Mill on the Floss</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q3400981">Lorna Doone</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q5724762">Smoke</rs>. <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q5724762">Smoke</rs> is not, in my
+            opinion, one of the "noblest available to English readers," but in a representative list
+            I cannot leave <rs type="author" ref="http://www.wikidata.org/entity/Q42831"
+              >Turgénieff</rs> out.</p>
+        </div>
+        <div type="response" n="67">
+          <opener><rs type="voter" xml:id="voter-west-e-a"><persName>Mrs. E. A. West</persName>,
+                <placeName ref="http://www.wikidata.org/entity/Q1297"
+            >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736"
+              >Les Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q492384">Titan</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q141222312">The Maid of Athens</rs>.
+            The last is great only because of the great comfort <pb n="22"/> furnished the reader by
+            the pleasant pages. <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs> and <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>
+            are great because of the great discomfort they furnish, and I think should never be read
+            if healthy literature is obtainable.</p>
+        </div>
+        <div type="response" n="68">
+          <opener><rs type="voter" xml:id="voter-willard-samuel"
+              ref="http://www.wikidata.org/entity/Q141224563"><persName>Dr. Samuel
+                Willard</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
+              Mid-Lothian</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1218985">The Last Days of Pompeii</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1141732">House of Seven
+              Gables</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2469230">Quentin Durward</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q3522018">The Newcomes</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q8258">The
+              Arabian Nights</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q189811">David Copperfield</rs>. My personal
+            preferences, the books that I am willing to read over and over, are: <rs type="novel"
+              ana="#mention" ref="http://www.wikidata.org/entity/Q2469230">Quentin Durward</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q2851345">Anne of
+              Geierstein</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q2091094">Heart of Mid-Lothian</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q19067695">What Will He Do With It?</rs>
+            <rs type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q1218985">The Last
+              Days of Pompeii</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q124081440">All in a Garden Fair</rs>, <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q189811">David
+              Copperfield</rs>, <rs type="novel" ana="#mention"
+              ref="http://www.wikidata.org/entity/Q18161660">Nick of the Woods</rs>, and <rs
+              type="novel" ana="#mention" ref="http://www.wikidata.org/entity/Q2611046">Adam
+              Bede</rs>.</p>
+        </div>
+        <div type="response" n="69">
+          <opener><rs type="voter" xml:id="voter-williams-alice-l"><persName>Mrs. Alice L.
+                Williams</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q16385244">The
+              Caxtons</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q1215018">Mill on the Floss</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q638327">Silas
+              Marner</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961"
+              >Jane Eyre</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1557935">Our Mutual Friend</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity Fair</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2222"
+              >Uncle Tom's Cabin</rs>.</p>
+        </div>
+        <div type="response" n="70">
+          <opener><rs type="voter" xml:id="voter-woolley-celia-p"
+              ref="http://www.wikidata.org/entity/Q5058012"><persName>Mrs. Celia P.
+                Woolley</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
+          <p>I have avoided, in the preparation of this list, mentioning more than one work of a
+            single author. It is a question whether, if I had done otherwise, one or two more of <rs
+              type="author" ref="http://www.wikidata.org/entity/Q131333">George Eliot</rs>'s might
+            not replace those of <rs type="author" ref="http://www.wikidata.org/entity/Q79025"
+              >Scott</rs> and <rs type="author" ref="http://www.wikidata.org/entity/Q5686"
+              >Dickens</rs>. <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q1194031">Wilhelm Meister</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les
+              Misérables</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>,
+              <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+            >Ivanhoe</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
+              >David Copperfield</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>.</p>
+        </div>
+        <div type="response" n="71">
+          <opener><rs type="voter" xml:id="voter-wright-villa-a"
+              ref="http://www.wikidata.org/entity/Q141224752"><persName>Mrs. Villa A.
+                Wright</persName>, <placeName ref="http://www.wikidata.org/entity/Q36091"
+                >Minneapolis, Minn.</placeName></rs>:</opener>
+          <p>I asked the members of the Biographical Club for their opinion and give it in part. <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
+              Letter</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q12060647">Hypatia</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836">Vanity
+            Fair</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q308918"
+              >Tale of Two Cities</rs>, <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>, <rs type="novel"
+              ana="#vote" ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>, <rs
+              type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q492384">Titan</rs>
+            (Charles J. Brooks, translator), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q2468609">Consuélo</rs> (Francis G. Shaw,
+            translator), <rs type="novel" ana="#vote"
+              ref="http://www.wikidata.org/entity/Q141222435">Good Luck</rs> (Frances A. Shaw,
+            translator, now living in Minneapolis).</p>
+        </div>
+        <div type="response" n="72">
+          <opener><rs type="voter" xml:id="voter-zachos-j-c"
+              ref="http://www.wikidata.org/entity/Q3181216"><persName>Prof. J. C. Zachos</persName>,
+              Curator of the <orgName>Cooper Institute</orgName>, <placeName
+                ref="http://www.wikidata.org/entity/Q60">N. Y.</placeName></rs>:</opener>
+          <p>I send you, according to the request of your circular, the titles of ten novels, such
+            as, perhaps, might take position among the best in the world;—although this is <hi
+              rend="italic">largely a <pb n="23"/> matter of private judgment</hi>. In the novels of
+            all nations we shall find the best delineation of the social and even the political life
+            of man—his manners and customs, his thoughts and feelings, in every age and nationality.
+            The novel, therefore, <hi rend="italic">well selected</hi>, becomes a source of
+            instruction to youth. Here, then, are ten novels that cover a wide range of history in
+            the social development of man, as well as stand high in the literature of nations:</p>
+          <list type="ordered">
+            <item n="1"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
+                >Ivanhoe</rs>. England in Medi&#xE6;val times.</item>
+            <item n="2"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1218985"
+                >The Last Days of Pompeii</rs>. Social life in the days of the Roman Empire.</item>
+            <item n="3"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q182961"
+                >Jane Eyre</rs>. An analytic description of English home life.</item>
+            <item n="4"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q460583"
+                >Pickwick</rs>. The country life, manners and eccentricities of the English
+              people.</item>
+            <item n="5"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q612836"
+                >Vanity Fair</rs>. Analytic of English manners and character.</item>
+            <item n="6"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q180736"
+                >Les Misérables</rs>. French life in the lower ranks.</item>
+            <item n="7"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don
+                Quixote</rs>. Spanish life in the 16th Century.</item>
+            <item n="8"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2468609"
+                >Consuélo</rs>. The aspiration for reform in the social and political life of
+              Europe.</item>
+            <item n="9"><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046"
+                >Adam Bede</rs>. Human life, tried by great standards.</item>
+            <item n="10"><rs type="novel" ana="#vote"
+                ref="http://www.wikidata.org/entity/Q108665083">The Egyptian Princess</rs>. The
+              ancient life of Egypt and the Far East.</item>
+          </list>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
