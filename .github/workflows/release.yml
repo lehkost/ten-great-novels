@@ -40,11 +40,9 @@ jobs:
           mkdir -p release
           cp index.html schema.jsonld query.rq ten-great-novels.graphml \
              data/ten-great-novels.xml release/
-          cp assets/favicon.svg release/
           # written only when the Wikidata Query Service answered during the build
           [ -f correspondents.geojson ] && cp correspondents.geojson release/ || true
-          (cd release && zip -qr ../ten-great-novels-site.zip .)
-          rm release/favicon.svg
+          ls -l release
 
       - name: Publish the release
         env:
@@ -53,4 +51,4 @@ jobs:
           gh release create "$GITHUB_REF_NAME" \
              --title "Version $GITHUB_REF_NAME" \
              --generate-notes \
-             release/* ten-great-novels-site.zip
+             release/*
