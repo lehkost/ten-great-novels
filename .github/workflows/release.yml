@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends xsltproc libxml2-utils
+          python -m pip install --quiet -r requirements.txt
+
+      - name: Check and build
+        run: |
+          xmllint --noout data/ten-great-novels.xml
+          python3 scripts/consistency.py data/ten-great-novels.xml
+          sh build.sh
+
+      - name: Collect the release assets
+        run: |
+          mkdir -p release
+          cp index.html schema.jsonld query.rq ten-great-novels.graphml \
+             data/ten-great-novels.xml release/
+          cp assets/favicon.svg release/
+          # written only when the Wikidata Query Service answered during the build
+          [ -f correspondents.geojson ] && cp correspondents.geojson release/ || true
+          (cd release && zip -qr ../ten-great-novels-site.zip .)
+          rm release/favicon.svg
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+             --title "$GITHUB_REF_NAME" \
+             --generate-notes \
+             release/* ten-great-novels-site.zip
