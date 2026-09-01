@@ -4,21 +4,23 @@ geojson_export.py: builds a GeoJSON of the correspondents' places and the
 matching geojson.io link.
 
 The counts come from the TEI file, the coordinates and names from Wikidata
-(P625, queried at build time). If the query service cannot be reached, the
-script writes an empty URL file and exits 0: the build then simply omits the
-GeoJSON link instead of failing.
+(P625, fetched at build time through the wbgetentities API, one request for
+all places, which is far less prone to throttling than the query service).
+If Wikidata cannot be reached, the script writes an empty URL file and exits 0:
+the build then simply omits the GeoJSON link instead of failing.
 
-Usage: python3 geojson_export.py ten-great-novels.xml
+Usage: python3 scripts/geojson_export.py data/ten-great-novels.xml
 Writes: correspondents.geojson, geojsonio-url.txt
 """
-import json, sys, urllib.parse, urllib.request, urllib.error
+import json, sys, time, urllib.parse, urllib.request
 from collections import Counter
 from lxml import etree
 
 N = '{http://www.tei-c.org/ns/1.0}'
-ENDPOINT = 'https://query.wikidata.org/sparql'
+API = 'https://www.wikidata.org/w/api.php'
 UA = ('ten-great-novels-build/1.0 (https://github.com/lehkost/ten-great-novels; '
       'TEI edition build script) python-urllib')
+CHUNK = 50                                  # wbgetentities takes 50 ids per call
 
 # ---------------------------------------------------------------- counts
 cnt = Counter()
@@ -30,33 +32,50 @@ for rs in etree.parse(sys.argv[1]).iter(N + 'rs'):
         if pl.get('ref'):
             cnt[pl.get('ref').rsplit('/', 1)[-1]] += 1
 
-values = ' '.join('wd:' + q for q in cnt)
-query = f"""SELECT ?place ?placeLabel ?lat ?lon WHERE {{
-  VALUES ?place {{ {values} }}
-  ?place p:P625/psv:P625 ?node .
-  ?node wikibase:geoLatitude ?lat ; wikibase:geoLongitude ?lon .
-  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en" }}
-}}"""
-
 # ---------------------------------------------------------------- coordinates
-def fetch():
-    url = ENDPOINT + '?' + urllib.parse.urlencode({'query': query, 'format': 'json'})
-    req = urllib.request.Request(url, headers={
-        'User-Agent': UA, 'Accept': 'application/sparql-results+json'})
+def fetch(ids):
+    q = urllib.parse.urlencode({'action': 'wbgetentities', 'ids': '|'.join(ids),
+                                'props': 'labels|claims', 'languages': 'en',
+                                'format': 'json', 'formatversion': '2'})
+    req = urllib.request.Request(API + '?' + q, headers={'User-Agent': UA})
     with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)['results']['bindings']
+        return json.load(r)['entities']
 
-try:
-    rows = fetch()
-except Exception as e:                      # network, timeout, rate limit, outage
-    open('geojsonio-url.txt', 'w').write('\n')
-    print(f'Wikidata not reachable ({e.__class__.__name__}); GeoJSON link omitted')
-    sys.exit(0)
+def coordinate(entity):
+    """Latitude/longitude of the preferred P625 statement, if any."""
+    best = None
+    for st in entity.get('claims', {}).get('P625', []):
+        if st.get('rank') == 'deprecated':
+            continue
+        if best is None or st.get('rank') == 'preferred':
+            best = st
+    try:
+        v = best['mainsnak']['datavalue']['value']
+        return float(v['latitude']), float(v['longitude'])
+    except (TypeError, KeyError):
+        return None
 
+ids = list(cnt)
 coords = {}
-for b in rows:
-    q = b['place']['value'].rsplit('/', 1)[-1]
-    coords[q] = (b['placeLabel']['value'], float(b['lat']['value']), float(b['lon']['value']))
+try:
+    for i in range(0, len(ids), CHUNK):
+        chunk = ids[i:i + CHUNK]
+        for attempt in range(3):
+            try:
+                entities = fetch(chunk)
+                break
+            except Exception:
+                if attempt == 2:
+                    raise
+                time.sleep(2 * (attempt + 1))
+        for q, e in entities.items():
+            ll = coordinate(e)
+            if ll:
+                coords[q] = (e.get('labels', {}).get('en', {}).get('value', q), *ll)
+except Exception as e:
+    open('geojsonio-url.txt', 'w').write('\n')
+    print(f'Wikidata not reachable ({e.__class__.__name__}: {e}); GeoJSON link omitted')
+    sys.exit(0)
 
 missing = [q for q in cnt if q not in coords]
 
@@ -93,4 +112,4 @@ open('geojsonio-url.txt', 'w').write(
     'https://geojson.io/#data=data:application/json,' + urllib.parse.quote(compact, safe='') + '\n')
 
 print(f'{len(feats)} places from Wikidata, {sum(cnt.values())} correspondents'
-      + (f' | WITHOUT coordinates in Wikidata: {missing}' if missing else ''))
+      + (f' | WITHOUT coordinates: {missing}' if missing else ''))

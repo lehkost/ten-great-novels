@@ -50,9 +50,9 @@ and the Python packages listed in `requirements.txt`:
     python3 scripts/consistency.py data/ten-great-novels.xml
     sh build.sh
 
-The counts come from the TEI file; the coordinates for the map are queried from
-the Wikidata Query Service at build time. If that service cannot be reached, the
-build still succeeds and the page simply omits the GeoJSON link.
+The counts come from the TEI file; the coordinates for the map are fetched from
+the Wikidata API at build time. If Wikidata cannot be reached, the build still
+succeeds and the page simply omits the GeoJSON link.
 
 Every push to `main` runs the same steps in GitHub Actions and deploys the result
 to GitHub Pages.
