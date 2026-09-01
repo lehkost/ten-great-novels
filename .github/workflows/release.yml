@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    tags: ['v*']
+    tags: ['[0-9]*']          # 1.0, 1.1, 2.0 …
 
 permissions:
   contents: write
@@ -22,6 +22,12 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends xsltproc libxml2-utils
           python -m pip install --quiet -r requirements.txt
+
+      - name: The tag must match the version in the TEI header
+        run: |
+          hdr=$(xmllint --xpath 'string(//*[local-name()="edition"]/@n)' data/ten-great-novels.xml)
+          echo "tag $GITHUB_REF_NAME, header $hdr"
+          [ "$hdr" = "$GITHUB_REF_NAME" ] || exit 1
 
       - name: Check and build
         run: |
@@ -45,6 +51,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "$GITHUB_REF_NAME" \
-             --title "$GITHUB_REF_NAME" \
+             --title "Version $GITHUB_REF_NAME" \
              --generate-notes \
              release/* ten-great-novels-site.zip
