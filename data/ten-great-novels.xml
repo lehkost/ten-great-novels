@@ -20,7 +20,7 @@
           <persName>Frank Fischer</persName>
         </authority>
         <idno type="URL">https://lehkost.github.io/ten-great-novels/index.html</idno>
-        <date when="2026-09-01"/>
+        <date when="2026-09-03"/>
         <availability status="free">
           <licence target="http://creativecommons.org/publicdomain/zero/1.0/">The encoding and
             annotation of this edition are released under CC0 1.0 Universal. The 1891 text itself is
@@ -46,7 +46,7 @@
         <bibl type="digitalSource">
           <ref target="https://books.google.com/books?id=a5xPAQAAMAAJ&amp;printsec=frontcover"
             >Google Books</ref>
-          <date type="accessed" when="2026-09-01">1 September 2026</date>
+          <date type="accessed" when="2026-09-03">3 September 2026</date>
           <note type="rights">The digitized work is in the <ref
               target="https://creativecommons.org/publicdomain/mark/1.0/">public
             domain</ref>.</note>
@@ -82,6 +82,20 @@
               list.</catDesc>
           </category>
         </taxonomy>
+        <taxonomy xml:id="correspondent-gender">
+          <desc> Gender classification of the correspondents whose responses are reproduced in
+              <title>Ten Great Novels</title>. The categories apply only to persons encoded as
+              <gi>rs</gi> with <att>type</att>="voter". </desc>
+          <category xml:id="woman">
+            <catDesc>Correspondent identified as a woman.</catDesc>
+          </category>
+          <category xml:id="man">
+            <catDesc>Correspondent identified as a man.</catDesc>
+          </category>
+          <category xml:id="unknown">
+            <catDesc>Gender of the correspondent could not be determined.</catDesc>
+          </category>
+        </taxonomy>
       </classDecl>
       <p><gi>rs</gi> marks novels (<att>type</att>=<val>novel</val>), authors
           (<att>type</att>=<val>author</val>) and the respondents to the survey
@@ -108,7 +122,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-09-01">first version</change>
+      <change when="2026-09-03">first version</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -529,8 +543,8 @@
       <div type="letters">
         <head>THE LETTERS.</head>
         <div type="response" n="1">
-          <opener><rs type="voter" xml:id="voter-anonymous"
-            ><persName>Anonymous</persName></rs>.</opener>
+          <opener><rs type="voter" xml:id="voter-anonymous" ana="#unknown"
+                ><persName>Anonymous</persName></rs>.</opener>
           <p>In answer to your request for lists of ten best novels please accept the following from
             a lover of good novels: <rs type="novel" ana="#vote"
               ref="http://www.wikidata.org/entity/Q170583">Pride and Prejudice</rs>, <rs
@@ -548,7 +562,7 @@
             >Quits</rs>.</p>
         </div>
         <div type="response" n="2">
-          <opener><rs type="voter" xml:id="voter-adams-emma-s"
+          <opener><rs type="voter" xml:id="voter-adams-emma-s" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141215610"><persName>Emma S. Adams</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q1297"
             >Chicago</placeName></rs>:</opener>
@@ -582,7 +596,7 @@
               >David Copperfield</rs>.</p>
         </div>
         <div type="response" n="3">
-          <opener><rs type="voter" xml:id="voter-allen-j-h"
+          <opener><rs type="voter" xml:id="voter-allen-j-h" ana="#man"
               ref="http://www.wikidata.org/entity/Q6283902"><persName>Rev. J. H. Allen</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
               Mass.</placeName></rs>:</opener>
@@ -636,7 +650,7 @@
             go for variety and the widest study of life.</p>
         </div>
         <div type="response" n="4">
-          <opener><rs type="voter" xml:id="voter-allen-william-f"
+          <opener><rs type="voter" xml:id="voter-allen-william-f" ana="#man"
               ref="http://www.wikidata.org/entity/Q8009302"><persName>Prof. William F.
                 Allen</persName>, <orgName>University of Wisconsin</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q43788">Madison</placeName></rs>:</opener>
@@ -661,7 +675,7 @@
               ref="http://www.wikidata.org/entity/Q7737514">The Grandissimes</rs>.</p>
         </div>
         <div type="response" n="5">
-          <opener><rs type="voter" xml:id="voter-barrows-isabel-c"
+          <opener><rs type="voter" xml:id="voter-barrows-isabel-c" ana="#woman"
               ref="http://www.wikidata.org/entity/Q6077552"><persName>Mrs. Isabel C.
                 Barrows</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
                 >Boston</placeName></rs>:</opener>
@@ -682,7 +696,7 @@
               Johnstone</rs>.</p>
         </div>
         <div type="response" n="6">
-          <opener><rs type="voter" xml:id="voter-bartol-c-a"
+          <opener><rs type="voter" xml:id="voter-bartol-c-a" ana="#man"
               ref="http://www.wikidata.org/entity/Q66788920"><persName>Dr. C. A. Bartol</persName>,
               of <placeName ref="http://www.wikidata.org/entity/Q100"
             >Boston</placeName></rs>:</opener>
@@ -704,7 +718,7 @@
         </div>
         <pb n="8"/>
         <div type="response" n="7">
-          <opener><rs type="voter" xml:id="voter-batchelor-george"
+          <opener><rs type="voter" xml:id="voter-batchelor-george" ana="#man"
               ref="http://www.wikidata.org/entity/Q111025423"><persName>Rev. George
                 Batchelor</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -721,9 +735,9 @@
               Newcomes</rs>.</p>
         </div>
         <div type="response" n="8">
-          <opener><rs type="voter" xml:id="voter-beals-susie-b"><persName>Susie B. Beals</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q28848">St.
-            Paul</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-beals-susie-b" ana="#woman"><persName>Susie B.
+                Beals</persName>, <placeName ref="http://www.wikidata.org/entity/Q28848">St.
+                Paul</placeName></rs>:</opener>
           <p>It has been hard work to keep to ten, but I send them, not in order as to my liking,
             but somewhat as regards time in which they were written, and, as you said, for young
             people. <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974"
@@ -742,7 +756,8 @@
               Deronda</rs>.</p>
         </div>
         <div type="response" n="9">
-          <opener><rs type="voter" xml:id="voter-bissell"><persName>Miss Bissell</persName>,
+          <opener><rs type="voter" xml:id="voter-bissell" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141265643"><persName>Miss Bissell</persName>,
                   <orgName><placeName ref="http://www.wikidata.org/entity/Q486877">South
                   Bend</placeName> Public Schools</orgName>, Ind.</rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q907568">The Scarlet
@@ -760,7 +775,7 @@
               ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>.</p>
         </div>
         <div type="response" n="10">
-          <opener><rs type="voter" xml:id="voter-boyesen-j-k"
+          <opener><rs type="voter" xml:id="voter-boyesen-j-k" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141246256"><persName>Mrs. J. K.
                 Boyesen</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -804,9 +819,9 @@
               Solbaken</rs>.</p>
         </div>
         <div type="response" n="11">
-          <opener><rs type="voter" xml:id="voter-browne-e-l"><persName>Mrs. E. L. Browne</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q3143666">Hyde Park,
-              Ill.</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-browne-e-l" ana="#woman"><persName>Mrs. E. L.
+                Browne</persName>, <placeName ref="http://www.wikidata.org/entity/Q3143666">Hyde
+                Park, Ill.</placeName></rs>:</opener>
           <p>How could you be so cruel as to ask only ten of my friends for admission to your Unity
             Club, while the rest have to be left to the obscurity of the book-shelves? I have not
             been quite true to myself in this list, as not all of <rs type="author"
@@ -825,7 +840,7 @@
               Misérables</rs>.</p>
         </div>
         <div type="response" n="12">
-          <opener><rs type="voter" xml:id="voter-bulkeley-b-r"
+          <opener><rs type="voter" xml:id="voter-bulkeley-b-r" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141235240"><persName>Mrs. B. R.
                 Bulkeley</persName>, <placeName ref="http://www.wikidata.org/entity/Q523240"
                 >Concord, Mass.</placeName></rs>:</opener>
@@ -844,7 +859,7 @@
               Esmond</rs>.</p>
         </div>
         <div type="response" n="13">
-          <opener><rs type="voter" xml:id="voter-bullard-e-l"><persName>Mrs. E. L.
+          <opener><rs type="voter" xml:id="voter-bullard-e-l" ana="#woman"><persName>Mrs. E. L.
                 Bullard</persName>, <placeName ref="http://www.wikidata.org/entity/Q657748"
                 >Manchester, Mass.</placeName></rs>:</opener>
           <p>Your list is a very hard one to make out. I enjoy and think your young people had
@@ -869,7 +884,7 @@
               cert="medium">Nille Mori</rs>.</p>
         </div>
         <div type="response" n="14">
-          <opener><rs type="voter" xml:id="voter-carpenter-h-bernard"
+          <opener><rs type="voter" xml:id="voter-carpenter-h-bernard" ana="#man"
               ref="http://www.wikidata.org/entity/Q5718111"><persName>Rev. H. Bernard
                 Carpenter</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
                 >Boston</placeName></rs>:</opener>
@@ -896,7 +911,7 @@
         </div>
         <pb n="10"/>
         <div type="response" n="15">
-          <opener><rs type="voter" xml:id="voter-carruth-w-h"
+          <opener><rs type="voter" xml:id="voter-carruth-w-h" ana="#man"
               ref="http://www.wikidata.org/entity/Q21664274"><persName>W. H. Carruth</persName>, of
                 <orgName>Kansas State University</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q493840">Lawrence,
@@ -916,7 +931,7 @@
               Falconer</rs>.</p>
         </div>
         <div type="response" n="16">
-          <opener><rs type="voter" xml:id="voter-carruth-mrs-w-h"
+          <opener><rs type="voter" xml:id="voter-carruth-mrs-w-h" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141235188"><persName>Mrs. W. H.
                 Carruth</persName>, <placeName ref="http://www.wikidata.org/entity/Q493840"
                 >Lawrence, Kans.</placeName></rs>:</opener>
@@ -935,7 +950,7 @@
               ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="17">
-          <opener><rs type="voter" xml:id="voter-chadwick-john"
+          <opener><rs type="voter" xml:id="voter-chadwick-john" ana="#man"
               ref="http://www.wikidata.org/entity/Q15498332"><persName>Rev. John
               Chadwick</persName>, <placeName ref="http://www.wikidata.org/entity/Q18419">Brooklyn,
                 N. Y.</placeName></rs>:</opener>
@@ -956,7 +971,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q861017">Portrait of a Lady</rs>.</p>
         </div>
         <div type="response" n="18">
-          <opener><rs type="voter" xml:id="voter-clarke-james-freeman"
+          <opener><rs type="voter" xml:id="voter-clarke-james-freeman" ana="#man"
               ref="http://www.wikidata.org/entity/Q323362"><persName>James Freeman
               Clarke</persName>, of <placeName ref="http://www.wikidata.org/entity/Q100"
                 >Boston</placeName></rs>:</opener>
@@ -977,7 +992,7 @@
               Marner</rs>.</p>
         </div>
         <div type="response" n="19">
-          <opener><rs type="voter" xml:id="voter-colegrove-james"
+          <opener><rs type="voter" xml:id="voter-colegrove-james" ana="#man"
               ref="http://www.wikidata.org/entity/Q141223951"><persName>James Colegrove</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q1297"
             >Chicago</placeName></rs>:</opener>
@@ -1000,7 +1015,7 @@
             I would in every way recommend to be read.</p>
         </div>
         <div type="response" n="20">
-          <opener><rs type="voter" xml:id="voter-collyer-robert"
+          <opener><rs type="voter" xml:id="voter-collyer-robert" ana="#man"
               ref="http://www.wikidata.org/entity/Q12702002"><persName>Robert Collyer</persName>, of
                 <placeName ref="http://www.wikidata.org/entity/Q60">New
             York</placeName></rs>:</opener>
@@ -1019,7 +1034,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="21">
-          <opener><rs type="voter" xml:id="voter-cooke-george-willis"
+          <opener><rs type="voter" xml:id="voter-cooke-george-willis" ana="#man"
               ref="http://www.wikidata.org/entity/Q15437653"><persName>George Willis
                 Cooke</persName>, <placeName ref="http://www.wikidata.org/entity/Q2304357">West
                 Dedham, Mass.</placeName></rs>:</opener>
@@ -1047,7 +1062,7 @@
               ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
         </div>
         <div type="response" n="22">
-          <opener><rs type="voter" xml:id="voter-crocker-lucretia"
+          <opener><rs type="voter" xml:id="voter-crocker-lucretia" ana="#woman"
               ref="http://www.wikidata.org/entity/Q22017472"><persName>Miss Lucretia
                 Crocker</persName>, of the <orgName><placeName
                   ref="http://www.wikidata.org/entity/Q100">Boston</placeName> Public
@@ -1095,7 +1110,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q2298931">Debit and Credit</rs>.</p>
         </div>
         <div type="response" n="23">
-          <opener><rs type="voter" xml:id="voter-davidson-thomas"
+          <opener><rs type="voter" xml:id="voter-davidson-thomas" ana="#man"
               ref="http://www.wikidata.org/entity/Q3525030"><persName>Prof. Thomas
                 Davidson</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
                 >Boston</placeName></rs>:</opener>
@@ -1115,7 +1130,7 @@
               Mid-Lothian</rs>.</p>
         </div>
         <div type="response" n="24">
-          <opener><rs type="voter" xml:id="voter-dole-c-f"
+          <opener><rs type="voter" xml:id="voter-dole-c-f" ana="#man"
               ref="http://www.wikidata.org/entity/Q5077709"><persName>C. F. Dole</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q985993">Jamaica Plain,
                 Mass.</placeName></rs>:</opener>
@@ -1141,7 +1156,7 @@
               Faun</rs>.</p>
         </div>
         <div type="response" n="25">
-          <opener><rs type="voter" xml:id="voter-everett-c-c"
+          <opener><rs type="voter" xml:id="voter-everett-c-c" ana="#man"
               ref="http://www.wikidata.org/entity/Q5076120"><persName>Prof. C. C.
               Everett</persName>, Dean of the <orgName><placeName
                   ref="http://www.wikidata.org/entity/Q49111">Cambridge</placeName> Divinity
@@ -1161,9 +1176,9 @@
               ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>.</p>
         </div>
         <div type="response" n="26">
-          <opener><rs type="voter" xml:id="voter-follansbee-susie-d"><persName>Mrs. Susie D.
-                Follansbee</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
-                >Chicago</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-follansbee-susie-d" ana="#woman"><persName>Mrs.
+                Susie D. Follansbee</persName>, <placeName
+                ref="http://www.wikidata.org/entity/Q1297">Chicago</placeName></rs>:</opener>
           <p>For me these novels are the <hi rend="italic">great</hi> ones, but I would like to say
             that there are some among them that I should not think it wise to give to the average
             young person: <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031"
@@ -1181,8 +1196,8 @@
               ref="http://www.wikidata.org/entity/Q96374610">Cecil Dreeme</rs>.</p>
         </div>
         <div type="response" n="27">
-          <opener><rs type="voter" xml:id="voter-fort-phoebe"><persName>Miss Phœbe Fort</persName>,
-                  <orgName><placeName ref="http://www.wikidata.org/entity/Q2008706"
+          <opener><rs type="voter" xml:id="voter-fort-phoebe" ana="#woman"><persName>Miss Phœbe
+                Fort</persName>, <orgName><placeName ref="http://www.wikidata.org/entity/Q2008706"
                   >Elkhart</placeName> Public Schools</orgName>, Ind.</rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2091094">Heart of
               Mid-Lothian</rs>, <rs type="novel" ana="#vote"
@@ -1199,7 +1214,7 @@
               ref="http://www.wikidata.org/entity/Q2611046">Adam Bede</rs>.</p>
         </div>
         <div type="response" n="28">
-          <opener><rs type="voter" xml:id="voter-freeman-j-c"
+          <opener><rs type="voter" xml:id="voter-freeman-j-c" ana="#man"
               ref="http://www.wikidata.org/entity/Q141235226"><persName>Prof. J. C.
                 Freeman</persName>, Professor of English Literature at <orgName>State
                 University</orgName>, <placeName ref="http://www.wikidata.org/entity/Q43788"
@@ -1234,7 +1249,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="29">
-          <opener><rs type="voter" xml:id="voter-furness-w-e"
+          <opener><rs type="voter" xml:id="voter-furness-w-e" ana="#man"
               ref="http://www.wikidata.org/entity/Q94259148"><persName>W. E. Furness,
                 Esq.</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -1254,7 +1269,7 @@
               ref="http://www.wikidata.org/entity/Q469690">Mansfield Park</rs>.</p>
         </div>
         <div type="response" n="30">
-          <opener><rs type="voter" xml:id="voter-giles-ella-a"
+          <opener><rs type="voter" xml:id="voter-giles-ella-a" ana="#woman"
               ref="http://www.wikidata.org/entity/Q56096292"><persName>Miss Ella A.
               Giles</persName>, <placeName ref="http://www.wikidata.org/entity/Q43788">Madison,
                 Wis.</placeName></rs>:</opener>
@@ -1286,7 +1301,7 @@
             Eyre</rs>.</p>
         </div>
         <div type="response" n="31">
-          <opener><rs type="voter" xml:id="voter-gilman-n-p"
+          <opener><rs type="voter" xml:id="voter-gilman-n-p" ana="#man"
               ref="http://www.wikidata.org/entity/Q18239172"><persName>N. P. Gilman</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q2049231">Wayland,
               Mass.</placeName></rs>:</opener>
@@ -1306,7 +1321,7 @@
               Angel</rs>.</p>
         </div>
         <div type="response" n="32">
-          <opener><rs type="voter" xml:id="voter-gordon-e-e"
+          <opener><rs type="voter" xml:id="voter-gordon-e-e" ana="#woman"
               ref="http://www.wikidata.org/entity/Q56248073"><persName>Miss E. E. Gordon</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q264605">Humboldt,
               Iowa</placeName></rs>:</opener>
@@ -1325,7 +1340,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q5233331">David Elginbrod</rs>.</p>
         </div>
         <div type="response" n="33">
-          <opener><rs type="voter" xml:id="voter-greeley-samuel-s"
+          <opener><rs type="voter" xml:id="voter-greeley-samuel-s" ana="#man"
               ref="http://www.wikidata.org/entity/Q141224134"><persName>Samuel S. Greeley,
                 Esq.</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -1345,7 +1360,7 @@
               ref="http://www.wikidata.org/entity/Q141221964">Margaret</rs>.</p>
         </div>
         <div type="response" n="34">
-          <opener><rs type="voter" xml:id="voter-griswold-hattie-tyng"
+          <opener><rs type="voter" xml:id="voter-griswold-hattie-tyng" ana="#woman"
               ref="http://www.wikidata.org/entity/Q29920448"><persName>Mrs. Hattie Tyng
                 Griswold</persName>, <placeName ref="http://www.wikidata.org/entity/Q1570063"
                 >Columbus, Wis.</placeName></rs>:</opener>
@@ -1370,7 +1385,7 @@
               Meister</rs>.</p>
         </div>
         <div type="response" n="35">
-          <opener><rs type="voter" xml:id="voter-hale-edward-everett"
+          <opener><rs type="voter" xml:id="voter-hale-edward-everett" ana="#man"
               ref="http://www.wikidata.org/entity/Q786616"><persName>Edward Everett Hale</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q100"
             >Boston</placeName></rs>:</opener>
@@ -1395,7 +1410,7 @@
               >Three Guardsmen</rs>. The last simply to show the value of pure narrative.</p>
         </div>
         <div type="response" n="36">
-          <opener><rs type="voter" xml:id="voter-harris-w-t"
+          <opener><rs type="voter" xml:id="voter-harris-w-t" ana="#man"
               ref="http://www.wikidata.org/entity/Q5791238"><persName>Prof. W. T. Harris</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q523240">Concord,
               Mass.</placeName></rs>:</opener>
@@ -1427,7 +1442,7 @@
               Crusoe</rs>.</p>
         </div>
         <div type="response" n="37">
-          <opener><rs type="voter" xml:id="voter-hedge-frederic-h"
+          <opener><rs type="voter" xml:id="voter-hedge-frederic-h" ana="#man"
               ref="http://www.wikidata.org/entity/Q5497046"><persName>Dr. Frederic H.
                 Hedge</persName>, <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
                 Mass.</placeName></rs>:</opener>
@@ -1477,7 +1492,7 @@
               Children</rs>," I omit for the same reason.</p>
         </div>
         <div type="response" n="38">
-          <opener><rs type="voter" xml:id="voter-hiscock-h-m"><persName>Mrs. H. M.
+          <opener><rs type="voter" xml:id="voter-hiscock-h-m" ana="#woman"><persName>Mrs. H. M.
                 Hiscock</persName>, <placeName ref="http://www.wikidata.org/entity/Q16554">Denver,
                 Colo.</placeName></rs>:</opener>
           <p>I am greatly obliged for the <hi rend="italic">Ten Great Novels</hi>' interest. I read
@@ -1495,7 +1510,7 @@
         </div>
         <pb n="16"/>
         <div type="response" n="39">
-          <opener><rs type="voter" xml:id="voter-holmes-israel"><persName>Mrs. Israel
+          <opener><rs type="voter" xml:id="voter-holmes-israel" ana="#woman"><persName>Mrs. Israel
                 Holmes</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
@@ -1514,7 +1529,7 @@
             Eyre</rs>.</p>
         </div>
         <div type="response" n="40">
-          <opener><rs type="voter" xml:id="voter-hosmer-j-k"
+          <opener><rs type="voter" xml:id="voter-hosmer-j-k" ana="#man"
               ref="http://www.wikidata.org/entity/Q6137218"><persName>Prof. J. K. Hosmer</persName>,
               Professor of German Literature in <orgName>Washington University</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q38022">St. Louis,
@@ -1535,9 +1550,9 @@
               Jeune Homme Pauvre</rs>.</p>
         </div>
         <div type="response" n="41">
-          <opener><rs type="voter" xml:id="voter-howe-grace"><persName>Miss Grace Howe</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q462161">Kenosha,
-              Wis.</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-howe-grace" ana="#woman"><persName>Miss Grace
+                Howe</persName>, <placeName ref="http://www.wikidata.org/entity/Q462161">Kenosha,
+                Wis.</placeName></rs>:</opener>
           <p>I send you the following list of novels, not because I think them the best in every
             case, but the best for such a purpose. If I were to choose the best, I should take three
             or four of <rs type="author" ref="http://www.wikidata.org/entity/Q167768"
@@ -1562,7 +1577,7 @@
               ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>.</p>
         </div>
         <div type="response" n="42">
-          <opener><rs type="voter" xml:id="voter-hubbard-sara-a"><persName>Mrs. Sara A.
+          <opener><rs type="voter" xml:id="voter-hubbard-sara-a" ana="#woman"><persName>Mrs. Sara A.
                 Hubbard</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p>I do not like to say of any list I might make that they are the best novels in the
@@ -1586,7 +1601,7 @@
             the last two, for the choice is difficult.</p>
         </div>
         <div type="response" n="43">
-          <opener><rs type="voter" xml:id="voter-johnson-f-a"><persName>Mrs. F. A.
+          <opener><rs type="voter" xml:id="voter-johnson-f-a" ana="#woman"><persName>Mrs. F. A.
                 Johnson</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert
@@ -1606,7 +1621,7 @@
         </div>
         <pb n="17"/>
         <div type="response" n="44">
-          <opener><rs type="voter" xml:id="voter-jones-j-ll"
+          <opener><rs type="voter" xml:id="voter-jones-j-ll" ana="#man"
               ref="http://www.wikidata.org/entity/Q6177549"><persName>J. Ll. Jones</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q1297"
             >Chicago</placeName></rs>:</opener>
@@ -1625,7 +1640,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q480">Don Quixote</rs>.</p>
         </div>
         <div type="response" n="45">
-          <opener><rs type="voter" xml:id="voter-jones-s-c-ll"
+          <opener><rs type="voter" xml:id="voter-jones-s-c-ll" ana="#woman"
               ref="http://www.wikidata.org/entity/Q62026508"><persName>Mrs. S. C. Ll.
                 Jones</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -1644,9 +1659,9 @@
               ref="http://www.wikidata.org/entity/Q141222715">A Life for a Life</rs>.</p>
         </div>
         <div type="response" n="46">
-          <opener><rs type="voter" xml:id="voter-king-c-b"><persName>Mrs. C. B. King</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q1297"
-            >Chicago</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-king-c-b" ana="#woman"><persName>Mrs. C. B.
+                King</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q4820313">On the
               Heights</rs>, <rs type="novel" ana="#vote"
               ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>, <rs type="novel"
@@ -1662,7 +1677,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
         </div>
         <div type="response" n="47">
-          <opener><rs type="voter" xml:id="voter-learned-j-c"
+          <opener><rs type="voter" xml:id="voter-learned-j-c" ana="#man"
               ref="http://www.wikidata.org/entity/Q94662903"><persName>Rev. J. C.
               Learned</persName>, <placeName ref="http://www.wikidata.org/entity/Q38022">St.
                 Louis</placeName></rs>:</opener>
@@ -1703,7 +1718,7 @@
               ref="http://www.wikidata.org/entity/Q23307970">Charles Auchester</rs>.</p>
         </div>
         <div type="response" n="48">
-          <opener><rs type="voter" xml:id="voter-lewis-mary-thorn"
+          <opener><rs type="voter" xml:id="voter-lewis-mary-thorn" ana="#woman"
               ref="http://www.wikidata.org/entity/Q126001998"><persName>Miss Mary Thorn
                 Lewis</persName>, President of the <orgName>New Century Club</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q1345">Philadelphia</placeName></rs>:</opener>
@@ -1722,7 +1737,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q3400981">Lorna Doone</rs>.</p>
         </div>
         <div type="response" n="49">
-          <opener><rs type="voter" xml:id="voter-long-lily-a"
+          <opener><rs type="voter" xml:id="voter-long-lily-a" ana="#woman"
               ref="http://www.wikidata.org/entity/Q70278553"><persName>Miss Lily A. Long</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q28848">St. Paul,
               Minn.</placeName></rs>:</opener>
@@ -1742,7 +1757,7 @@
         </div>
         <pb n="18"/>
         <div type="response" n="50">
-          <opener><rs type="voter" xml:id="voter-mceroy-h"
+          <opener><rs type="voter" xml:id="voter-mceroy-h" ana="#man"
               ref="http://www.wikidata.org/entity/Q141224997"><persName>H. McEroy</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q257536">Janesville,
               Wis.</placeName></rs>:</opener>
@@ -1772,7 +1787,7 @@
             recent review of the Comédie Humaine.</p>
         </div>
         <div type="response" n="51">
-          <opener><rs type="voter" xml:id="voter-mcmahan-a-b"
+          <opener><rs type="voter" xml:id="voter-mcmahan-a-b" ana="#woman"
               ref="http://www.wikidata.org/entity/Q103982195"><persName>Mrs. A. B.
                 McMahan</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
                 Ill.</placeName></rs>:</opener>
@@ -1791,7 +1806,7 @@
               ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>.</p>
         </div>
         <div type="response" n="52">
-          <opener><rs type="voter" xml:id="voter-marean-emma-e"
+          <opener><rs type="voter" xml:id="voter-marean-emma-e" ana="#woman"
               ref="http://www.wikidata.org/entity/Q138654833"><persName>Mrs. Emma E.
                 Marean</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -1809,7 +1824,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="53">
-          <opener><rs type="voter" xml:id="voter-marean-mary-b"><persName>Mrs. Mary B.
+          <opener><rs type="voter" xml:id="voter-marean-mary-b" ana="#woman"><persName>Mrs. Mary B.
                 Marean</persName>, <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
                 Mass.</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
@@ -1827,7 +1842,7 @@
               ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="54">
-          <opener><rs type="voter" xml:id="voter-mead-edwin-d"
+          <opener><rs type="voter" xml:id="voter-mead-edwin-d" ana="#man"
               ref="http://www.wikidata.org/entity/Q83982479"><persName>Edwin D. Mead</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q100"
             >Boston</placeName></rs>:</opener>
@@ -1847,7 +1862,7 @@
               Letter</rs>.</p>
         </div>
         <div type="response" n="55">
-          <opener><rs type="voter" xml:id="voter-safford-mary-a"
+          <opener><rs type="voter" xml:id="voter-safford-mary-a" ana="#woman"
               ref="http://www.wikidata.org/entity/Q56248084"><persName>Rev. Mary A.
                 Safford</persName>, <placeName ref="http://www.wikidata.org/entity/Q264605"
                 >Humboldt, Iowa</placeName></rs>:</opener>
@@ -1866,7 +1881,7 @@
               >Middlemarch</rs>.</p>
         </div>
         <div type="response" n="56">
-          <opener><rs type="voter" xml:id="voter-sawyer-frances-p"
+          <opener><rs type="voter" xml:id="voter-sawyer-frances-p" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141247822"><persName>Frances P.
               Sawyer</persName>, <placeName ref="http://www.wikidata.org/entity/Q28848">St. Paul,
                 Minn.</placeName></rs>:</opener>
@@ -1890,7 +1905,7 @@
               ref="http://www.wikidata.org/entity/Q182961">Jane Eyre</rs>.</p>
         </div>
         <div type="response" n="57">
-          <opener><rs type="voter" xml:id="voter-shackford-c-c"
+          <opener><rs type="voter" xml:id="voter-shackford-c-c" ana="#man"
               ref="http://www.wikidata.org/entity/Q21600517"><persName>Prof. C. C.
                 Shackford</persName>, of <orgName>Cornell University</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q217346">Ithaca, N.
@@ -1911,7 +1926,7 @@
             >Ivanhoe</rs>.</p>
         </div>
         <div type="response" n="58">
-          <opener><rs type="voter" xml:id="voter-shedd-helen-s"
+          <opener><rs type="voter" xml:id="voter-shedd-helen-s" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141224928"><persName>Mrs. Helen S.
                 Shedd</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -1930,9 +1945,9 @@
               Princess</rs>.</p>
         </div>
         <div type="response" n="59">
-          <opener><rs type="voter" xml:id="voter-shorey-m-a"><persName>Mrs. M. A. Shorey</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q1297"
-            >Chicago</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-shorey-m-a" ana="#woman"><persName>Mrs. M. A.
+                Shorey</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q313129"
               >Middlemarch</rs>, <rs type="novel" ana="#vote"
               ref="http://www.wikidata.org/entity/Q552238">Daniel Deronda</rs>, <rs type="novel"
@@ -1948,7 +1963,7 @@
               ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>.</p>
         </div>
         <div type="response" n="60">
-          <opener><rs type="voter" xml:id="voter-simmons-h-m"
+          <opener><rs type="voter" xml:id="voter-simmons-h-m" ana="#man"
               ref="http://www.wikidata.org/entity/Q55720818"><persName>H. M. Simmons</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q36091"
             >Minneapolis</placeName></rs>:</opener>
@@ -1961,7 +1976,7 @@
             all I know about it.</p>
         </div>
         <div type="response" n="61">
-          <opener><rs type="voter" xml:id="voter-smith-fayette"
+          <opener><rs type="voter" xml:id="voter-smith-fayette" ana="#woman"
               ref="http://www.wikidata.org/entity/Q28954490"><persName>Mrs. Fayette
               Smith</persName>, <placeName ref="http://www.wikidata.org/entity/Q43196"
                 >Cincinnati</placeName></rs>:</opener>
@@ -1980,7 +1995,7 @@
               ref="http://www.wikidata.org/entity/Q180736">Les Misérables</rs>.</p>
         </div>
         <div type="response" n="62">
-          <opener><rs type="voter" xml:id="voter-staples-c-j"
+          <opener><rs type="voter" xml:id="voter-staples-c-j" ana="#man"
               ref="http://www.wikidata.org/entity/Q141224433"><persName>Rev. C. J.
                 Staples</persName>, <placeName ref="http://www.wikidata.org/entity/Q2318684"
                 >Reading, Mass.</placeName></rs>:</opener>
@@ -2019,7 +2034,7 @@
             it can be said of the first list that one cannot grow tired of re-reading them.</p>
         </div>
         <div type="response" n="63">
-          <opener><rs type="voter" xml:id="voter-stebbins-giles-b"
+          <opener><rs type="voter" xml:id="voter-stebbins-giles-b" ana="#man"
               ref="http://www.wikidata.org/entity/Q141224446"><persName>Giles B.
               Stebbins</persName>, <placeName ref="http://www.wikidata.org/entity/Q12439">Detroit,
                 Mich.</placeName></rs>:</opener>
@@ -2055,7 +2070,7 @@
             blowing away. Your asking for the golden grain will help the winnowing we need.</p>
         </div>
         <div type="response" n="64">
-          <opener><rs type="voter" xml:id="voter-sunderland-j-t"
+          <opener><rs type="voter" xml:id="voter-sunderland-j-t" ana="#man"
               ref="http://www.wikidata.org/entity/Q52155288"><persName>J. T. Sunderland</persName>,
                 <placeName ref="http://www.wikidata.org/entity/Q485172">Ann Arbor,
               Mich.</placeName></rs>:</opener>
@@ -2079,7 +2094,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q3693562">Corinne</rs>.</p>
         </div>
         <div type="response" n="65">
-          <opener><rs type="voter" xml:id="voter-tolman-harriet-s"
+          <opener><rs type="voter" xml:id="voter-tolman-harriet-s" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141224499"><persName>Harriet S.
               Tolman</persName>, <placeName ref="http://www.wikidata.org/entity/Q100"
                 >Boston</placeName></rs>:</opener>
@@ -2111,7 +2126,7 @@
               ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>.</p>
         </div>
         <div type="response" n="66">
-          <opener><rs type="voter" xml:id="voter-tunis-agatha"><persName>Mrs. Agatha
+          <opener><rs type="voter" xml:id="voter-tunis-agatha" ana="#woman"><persName>Mrs. Agatha
                 Tunis</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
                 Ill.</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
@@ -2133,9 +2148,9 @@
               >Turgénieff</rs> out.</p>
         </div>
         <div type="response" n="67">
-          <opener><rs type="voter" xml:id="voter-west-e-a"><persName>Mrs. E. A. West</persName>,
-                <placeName ref="http://www.wikidata.org/entity/Q1297"
-            >Chicago</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-west-e-a" ana="#woman"><persName>Mrs. E. A.
+                West</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
               <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q2611046">Adam
               Bede</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q189811"
@@ -2156,7 +2171,7 @@
             if healthy literature is obtainable.</p>
         </div>
         <div type="response" n="68">
-          <opener><rs type="voter" xml:id="voter-willard-samuel"
+          <opener><rs type="voter" xml:id="voter-willard-samuel" ana="#man"
               ref="http://www.wikidata.org/entity/Q141224563"><persName>Dr. Samuel
                 Willard</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -2191,8 +2206,8 @@
               Bede</rs>.</p>
         </div>
         <div type="response" n="69">
-          <opener><rs type="voter" xml:id="voter-williams-alice-l"><persName>Mrs. Alice L.
-                Williams</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+          <opener><rs type="voter" xml:id="voter-williams-alice-l" ana="#woman"><persName>Mrs. Alice
+                L. Williams</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
               <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q16385244">The
@@ -2209,7 +2224,7 @@
               >Uncle Tom's Cabin</rs>.</p>
         </div>
         <div type="response" n="70">
-          <opener><rs type="voter" xml:id="voter-woolley-celia-p"
+          <opener><rs type="voter" xml:id="voter-woolley-celia-p" ana="#woman"
               ref="http://www.wikidata.org/entity/Q5058012"><persName>Mrs. Celia P.
                 Woolley</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
@@ -2233,7 +2248,7 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q2222">Uncle Tom's Cabin</rs>.</p>
         </div>
         <div type="response" n="71">
-          <opener><rs type="voter" xml:id="voter-wright-villa-a"
+          <opener><rs type="voter" xml:id="voter-wright-villa-a" ana="#woman"
               ref="http://www.wikidata.org/entity/Q141224752"><persName>Mrs. Villa A.
                 Wright</persName>, <placeName ref="http://www.wikidata.org/entity/Q36091"
                 >Minneapolis, Minn.</placeName></rs>:</opener>
@@ -2255,7 +2270,7 @@
             translator, now living in Minneapolis).</p>
         </div>
         <div type="response" n="72">
-          <opener><rs type="voter" xml:id="voter-zachos-j-c"
+          <opener><rs type="voter" xml:id="voter-zachos-j-c" ana="#man"
               ref="http://www.wikidata.org/entity/Q3181216"><persName>Prof. J. C. Zachos</persName>,
               Curator of the <orgName>Cooper Institute</orgName>, <placeName
                 ref="http://www.wikidata.org/entity/Q60">N. Y.</placeName></rs>:</opener>
