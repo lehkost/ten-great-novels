@@ -1,41 +1,39 @@
 #!/usr/bin/env python3
 """
 build_wdqs.py: reads the TEI file, counts the correspondents per place and
-writes the SPARQL query plus the two Wikidata Query Service links.
+writes the SPARQL query behind the map link, plus the two links themselves.
 
-Usage: python3 build_wdqs.py ten-great-novels.xml
+The query is never executed by the build; it is handed to the stylesheet as a
+link and kept as a file so that it stays readable and citable.
+
+Usage: python3 scripts/build_wdqs.py data/ten-great-novels.xml
 Writes: query.rq, wdqs-url.txt (line 1 = embed/auto-run, line 2 = editor)
 """
 import sys, urllib.parse
-from collections import Counter
 from lxml import etree
 
-N = '{http://www.tei-c.org/ns/1.0}'
-tree = etree.parse(sys.argv[1])
+from tei_places import count_places
 
-# Level of extraction: the place of a correspondent is the <placeName ref="…">
-# inside <rs type="voter">. Other placeNames in the file (circular letter,
-# imprint) are not correspondents' places and stay out.
-cnt = Counter()
-for rs in tree.iter(N + 'rs'):
-    if rs.get('type') != 'voter':
-        continue
-    # descendant axis: some places sit inside <orgName> ("Boston Public Schools")
-    for pl in rs.iter(N + 'placeName'):
-        if pl.get('ref'):
-            cnt[pl.get('ref').rsplit('/', 1)[-1]] += 1
+INDENT = '   '                    # indentation of the VALUES block
+WIDTH = 74                        # wrap it at this column
+ENDPOINT = 'https://query.wikidata.org/'
 
-lines, cur = [], '   '            # wrap on pair boundaries, never inside a pair
-for q, n in cnt.most_common():
-    p = f'(wd:{q} {n})'
-    if len(cur) + len(p) + 1 > 74:
-        lines.append(cur); cur = '   '
-    cur += ' ' + p
-values = '\n'.join(lines + [cur])
+counts = count_places(etree.parse(sys.argv[1]))
+total = sum(counts.values())
+
+# Wrap on pair boundaries, never inside a pair.
+lines, current = [], ''
+for qid, n in counts.most_common():
+    pair = f'(wd:{qid} {n})'
+    if len(INDENT) + len(current) + len(pair) + 1 > WIDTH:
+        lines.append(current)
+        current = ''
+    current += ' ' + pair
+values = '\n'.join(INDENT + line for line in lines + [current])
 
 query = f"""#defaultView:Map
 # Places of the correspondents in "Ten Great Novels" (Chicago 1891)
-# {sum(cnt.values())} correspondents, {len(cnt)} places, generated from the TEI edition
+# {total} correspondents, {len(counts)} places, generated from the TEI edition
 SELECT ?placeLabel ?correspondents ?coord {{
   VALUES (?place ?correspondents) {{
 {values}
@@ -46,8 +44,10 @@ SELECT ?placeLabel ?correspondents ?coord {{
 """
 
 open('query.rq', 'w').write(query)
-enc = urllib.parse.quote(query, safe='')
-embed = 'https://query.wikidata.org/embed.html#' + enc
-editor = 'https://query.wikidata.org/#' + enc
-open('wdqs-url.txt', 'w').write(embed + '\n' + editor + '\n')
-print(f'{sum(cnt.values())} correspondents / {len(cnt)} places | query {len(query)} B | URL {len(embed)} B')
+encoded = urllib.parse.quote(query, safe='')
+embed = f'{ENDPOINT}embed.html#{encoded}'          # runs the query straight away
+editor = f'{ENDPOINT}#{encoded}'                   # opens it in the editor
+open('wdqs-url.txt', 'w').write(f'{embed}\n{editor}\n')
+
+print(f'{total} correspondents / {len(counts)} places | '
+      f'query {len(query)} B | URL {len(embed)} B')

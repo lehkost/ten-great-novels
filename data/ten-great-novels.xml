@@ -20,7 +20,7 @@
           <persName>Frank Fischer</persName>
         </authority>
         <idno type="URL">https://lehkost.github.io/ten-great-novels/index.html</idno>
-        <date when="2026-09-03"/>
+        <date when="2026-09-11"/>
         <availability status="free">
           <licence target="http://creativecommons.org/publicdomain/zero/1.0/">The encoding and
             annotation of this edition are released under CC0 1.0 Universal. The 1891 text itself is
@@ -46,7 +46,7 @@
         <bibl type="digitalSource">
           <ref target="https://books.google.com/books?id=a5xPAQAAMAAJ&amp;printsec=frontcover"
             >Google Books</ref>
-          <date type="accessed" when="2026-09-03">3 September 2026</date>
+          <date type="accessed" when="2026-09-11">11 September 2026</date>
           <note type="rights">The digitized work is in the <ref
               target="https://creativecommons.org/publicdomain/mark/1.0/">public
             domain</ref>.</note>
@@ -122,7 +122,7 @@
       </textClass>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-09-03">first version</change>
+      <change when="2026-09-11">first version</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -1176,9 +1176,10 @@
               ref="http://www.wikidata.org/entity/Q907568">The Scarlet Letter</rs>.</p>
         </div>
         <div type="response" n="26">
-          <opener><rs type="voter" xml:id="voter-follansbee-susie-d" ana="#woman"><persName>Mrs.
-                Susie D. Follansbee</persName>, <placeName
-                ref="http://www.wikidata.org/entity/Q1297">Chicago</placeName></rs>:</opener>
+          <opener><rs type="voter" xml:id="voter-follansbee-susie-d" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141414371"><persName>Mrs. Susie D.
+                Follansbee</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+                >Chicago</placeName></rs>:</opener>
           <p>For me these novels are the <hi rend="italic">great</hi> ones, but I would like to say
             that there are some among them that I should not think it wise to give to the average
             young person: <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031"
@@ -1824,7 +1825,8 @@
               ana="#vote" ref="http://www.wikidata.org/entity/Q141223688">Robert Falconer</rs>.</p>
         </div>
         <div type="response" n="53">
-          <opener><rs type="voter" xml:id="voter-marean-mary-b" ana="#woman"><persName>Mrs. Mary B.
+          <opener><rs type="voter" xml:id="voter-marean-mary-b" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141419089"><persName>Mrs. Mary B.
                 Marean</persName>, <placeName ref="http://www.wikidata.org/entity/Q49111">Cambridge,
                 Mass.</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q7363279">Romola</rs>,
@@ -1945,8 +1947,9 @@
               Princess</rs>.</p>
         </div>
         <div type="response" n="59">
-          <opener><rs type="voter" xml:id="voter-shorey-m-a" ana="#woman"><persName>Mrs. M. A.
-                Shorey</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+          <opener><rs type="voter" xml:id="voter-shorey-m-a" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141417553"><persName>Mrs. M. A.
+              Shorey</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q313129"
               >Middlemarch</rs>, <rs type="novel" ana="#vote"
@@ -2126,8 +2129,9 @@
               ref="http://www.wikidata.org/entity/Q4820313">On the Heights</rs>.</p>
         </div>
         <div type="response" n="66">
-          <opener><rs type="voter" xml:id="voter-tunis-agatha" ana="#woman"><persName>Mrs. Agatha
-                Tunis</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
+          <opener><rs type="voter" xml:id="voter-tunis-agatha" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141416717"><persName>Mrs. Agatha
+              Tunis</persName>, <placeName ref="http://www.wikidata.org/entity/Q575750">Quincy,
                 Ill.</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q1194031">Wilhelm
               Meister</rs>, <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q480"
@@ -2206,8 +2210,9 @@
               Bede</rs>.</p>
         </div>
         <div type="response" n="69">
-          <opener><rs type="voter" xml:id="voter-williams-alice-l" ana="#woman"><persName>Mrs. Alice
-                L. Williams</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
+          <opener><rs type="voter" xml:id="voter-williams-alice-l" ana="#woman"
+              ref="http://www.wikidata.org/entity/Q141376523"><persName>Mrs. Alice L.
+                Williams</persName>, <placeName ref="http://www.wikidata.org/entity/Q1297"
                 >Chicago</placeName></rs>:</opener>
           <p><rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q840974">Ivanhoe</rs>,
               <rs type="novel" ana="#vote" ref="http://www.wikidata.org/entity/Q16385244">The

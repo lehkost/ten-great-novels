@@ -24,12 +24,13 @@ All of these live next to the reading edition, under
 | File | |
 |---|---|
 | `data/ten-great-novels.xml` | the TEI edition: the source of everything else |
+| `data/novels-authors-metadata.tsv` | language, publication year, author and gender per novel, keyed by Wikidata Q-id |
 | `xslt/tei2html.xsl` | XSLT 1.0 stylesheet producing the reading edition |
 | `build.sh` | rebuilds the page and all data files |
 | `scripts/consistency.py` | validates the annotation; exits non-zero on errors |
 | `scripts/build_wdqs.py` | writes `query.rq` and the Wikidata Query Service link |
 | `scripts/geojson_export.py` | writes `correspondents.geojson` and the geojson.io link |
-| `scripts/tei2graphml.py` | writes the bipartite network of correspondents and votes |
+| `scripts/tei2graphml.py` | writes the bipartite network of correspondents and votes, enriched from the metadata table |
 | `scripts/extract_jsonld.py` | writes `schema.jsonld` from the metadata embedded in the page |
 | `assets/favicon.svg` | site icon, copied to the root of the published site |
 | `requirements.txt` | Python dependencies (lxml) |

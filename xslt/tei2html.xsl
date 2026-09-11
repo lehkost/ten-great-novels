@@ -20,6 +20,7 @@
        If the URL is empty the footer line is left out. -->
   <xsl:param name="wdqs-url"/>
   <xsl:param name="graphml-file">ten-great-novels.graphml</xsl:param>
+  <xsl:param name="tei-file">ten-great-novels.xml</xsl:param>
   <xsl:param name="geojson-url"/>
 
   <!-- The URL of this edition comes from <idno type="URL"> in the header; the
@@ -150,8 +151,8 @@ ul.cols li{break-inside:avoid}
       </head>
       <body>
         <main id="edition">
-          <xsl:call-template name="about"/>
           <xsl:call-template name="citation"/>
+          <xsl:call-template name="about"/>
           <xsl:call-template name="legend"/>
           <xsl:call-template name="data"/>
           <xsl:call-template name="statistics"/>
@@ -375,6 +376,7 @@ ul.cols li{break-inside:avoid}
     <div class="box box-data" id="data">
       <span class="bh">Data and downloads</span>
       <ul>
+        <li>Annotated text of the edition (<a href="{$tei-file}">TEI</a>)</li>
         <li>Bipartite network of correspondents and votes
           (<a href="{$graphml-file}">GraphML</a>)</li>
         <li>Places of the correspondents in
