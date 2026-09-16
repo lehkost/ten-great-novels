@@ -24,8 +24,7 @@ All of these live next to the reading edition, under
 | File | |
 |---|---|
 | `data/ten-great-novels.xml` | the TEI edition: the source of everything else |
-| `data/novels-authors-metadata.tsv` | language, publication year, author and gender per novel, keyed by Wikidata Q-id |
-| `xslt/tei2html.xsl` | XSLT 1.0 stylesheet producing the reading edition |
+| `data/novels-authors-metadata.tsv` | one row per novel, keyed by Wikidata Q-id: title, language, publication year, votes and mentions, author, author's gender, Goodreads id (see below) || `xslt/tei2html.xsl` | XSLT 1.0 stylesheet producing the reading edition |
 | `build.sh` | rebuilds the page and all data files |
 | `scripts/consistency.py` | validates the annotation; exits non-zero on errors |
 | `scripts/build_wdqs.py` | writes `query.rq` and the Wikidata Query Service link |
@@ -36,6 +35,21 @@ All of these live next to the reading edition, under
 | `requirements.txt` | Python dependencies (lxml) |
 | `CITATION.cff` | citation metadata |
 | `.github/workflows/pages.yml` | checks, builds and deploys on every push |
+
+### Columns of `novels-authors-metadata.tsv`
+
+| Column | |
+|---|---|
+| `novel_qid` | Wikidata Q-id of the novel, the key used in the TEI file |
+| `novel_title` | title as given in Wikidata |
+| `novel_language` | original language |
+| `novel_publication_year` | year of first publication, in EDTF (`1795/1796`, `0170~`) |
+| `novel_vote_count` | votes in the letters (`ana="#vote"`) |
+| `novel_mention_count` | mentions in the letters (`ana="#mention"`) |
+| `author_qid` | Wikidata Q-id of the author |
+| `author_name` | name of the author |
+| `author_sex` | sex or gender of the author, as recorded in Wikidata |
+| `novel_goodreads_id` | Goodreads book id (`https://www.goodreads.com/work/editions/<id>`); empty where no single Goodreads record exists |
 
 The build products are not kept under version control: `index.html`,
 `schema.jsonld`, `query.rq`, `correspondents.geojson` and

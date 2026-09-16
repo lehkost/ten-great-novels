@@ -7,8 +7,8 @@ The nodes are correspondents (rs/@type="voter") and works (rs/@type="novel"). An
 edge joins a correspondent to every work on the list they submitted, that is to
 every rs/@ana="#vote". Correspondents who cast no votes get no node.
 
-Node ids: the correspondent's xml:id ("voter-everett-c-c"), and "work_" plus the
-Wikidata Q number ("work_Q907568").
+Node ids: the correspondent's xml:id ("voter-prof-c-c-everett"), and "work_" plus
+the Wikidata Q number ("work_Q907568").
 
 Correspondents carry their gender, taken from the @ana attribute of the TEI file.
 Works carry their language, taken from novels-authors-metadata.tsv, and their

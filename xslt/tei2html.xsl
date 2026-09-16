@@ -256,7 +256,7 @@ ul.cols li{break-inside:avoid}
     </script>
   </xsl:template>
 
-  <!-- 2026-09-01 -> 1 September 2026. XSLT 1.0 has no date formatting. -->
+  <!-- 2026-09-17 -> 17 September 2026. XSLT 1.0 has no date formatting. -->
   <xsl:template name="date-human">
     <xsl:param name="iso"/>
     <xsl:variable name="m" select="substring($iso,6,2)"/>
