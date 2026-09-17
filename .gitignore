@@ -8,5 +8,9 @@ wdqs-url.txt
 geojsonio-url.txt
 _site/
 
+# Python bytecode
+__pycache__/
+*.py[cod]
+
 # LibreOffice lock files
 .~lock.*#

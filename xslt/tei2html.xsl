@@ -21,6 +21,7 @@
   <xsl:param name="wdqs-url"/>
   <xsl:param name="graphml-file">ten-great-novels.graphml</xsl:param>
   <xsl:param name="tei-file">ten-great-novels.xml</xsl:param>
+  <xsl:param name="tsv-file">novels-authors-metadata.tsv</xsl:param>
   <xsl:param name="geojson-url"/>
 
   <!-- The URL of this edition comes from <idno type="URL"> in the header; the
@@ -235,20 +236,26 @@ ul.cols li{break-inside:avoid}
      "@type": "DataDownload",
      "name": "TEI edition",
      "encodingFormat": "application/tei+xml",
-     "contentUrl": "<xsl:value-of select="$base"/>ten-great-novels.xml"
+     "contentUrl": "<xsl:value-of select="$base"/><xsl:value-of select="$tei-file"/>"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Novels and authors with Wikidata and Goodreads identifiers",
+     "encodingFormat": "text/tab-separated-values",
+     "contentUrl": "<xsl:value-of select="$base"/><xsl:value-of select="$tsv-file"/>"
     },
     {
      "@type": "DataDownload",
      "name": "Bipartite network of correspondents and votes",
      "encodingFormat": "application/graphml+xml",
-     "contentUrl": "<xsl:value-of select="$base"/>ten-great-novels.graphml"
-    },
+     "contentUrl": "<xsl:value-of select="$base"/><xsl:value-of select="$graphml-file"/>"
+    }<xsl:if test="$geojson-url != ''">,
     {
      "@type": "DataDownload",
      "name": "Places of the correspondents",
      "encodingFormat": "application/geo+json",
      "contentUrl": "<xsl:value-of select="$base"/>correspondents.geojson"
-    }
+    }</xsl:if>
    ]
   }
  ]
@@ -377,6 +384,8 @@ ul.cols li{break-inside:avoid}
       <span class="bh">Data and downloads</span>
       <ul>
         <li>Annotated text of the edition (<a href="{$tei-file}">TEI</a>)</li>
+        <li>Novels and authors with Wikidata and Goodreads identifiers
+          (<a href="{$tsv-file}">TSV</a>)</li>
         <li>Bipartite network of correspondents and votes
           (<a href="{$graphml-file}">GraphML</a>)</li>
         <li>Places of the correspondents in

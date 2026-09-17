@@ -42,7 +42,8 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html schema.jsonld query.rq \
-             ten-great-novels.graphml data/ten-great-novels.xml _site/
+             ten-great-novels.graphml data/ten-great-novels.xml \
+             data/novels-authors-metadata.tsv _site/
           cp assets/favicon.svg _site/
           # written only when the Wikidata Query Service answered during the build
           [ -f correspondents.geojson ] && cp correspondents.geojson _site/ || true
