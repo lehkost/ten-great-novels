@@ -436,6 +436,7 @@ ul.cols li{break-inside:avoid}
             </xsl:when>
             <xsl:otherwise>correspondents</xsl:otherwise>
           </xsl:choose>
+          <xsl:text> </xsl:text>
           <span class="note">(each query is run live; it can take a while or time out, and
           only items with an image on Wikidata are shown)</span></li>
       </ul>
