@@ -5,6 +5,12 @@ query.rq
 correspondents.geojson
 ten-great-novels.graphml
 wdqs-url.txt
+images-authors.rq
+images-authors-url.txt
+images-novels.rq
+images-novels-url.txt
+images-correspondents.rq
+images-correspondents-url.txt
 geojsonio-url.txt
 _site/
 

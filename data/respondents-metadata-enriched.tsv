@@ -1,0 +1,73 @@
+respondent_number	respondent_id	respondent_name	respondent_qid	respondent_gender	respondent_birth_date	respondent_death_date	respondent_wikipedia_sitelinks	respondent_wikipedia_sitelinks_retrieved	respondent_qrank	respondent_qrank_retrieved	respondent_letter_first_printed	respondent_letter_first_printed_url
+1	voter-anonymous	Anonymous		unknown							1885-02-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA485
+2	voter-emma-s-adams	Emma S. Adams	Q141215610	female	1844-02-18	1926-03-26	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+3	voter-rev-j-h-allen	Rev. J. H. Allen	Q6283902	male	1820-08-21	1898-03-20	3	2026-09-21T08:47:41Z	637	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+4	voter-prof-william-f-allen	Prof. William F. Allen	Q8009302	male	1830-09-05	1889-12-09	3	2026-09-21T08:47:41Z	1829	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+5	voter-mrs-isabel-c-barrows	Mrs. Isabel C. Barrows	Q6077552	female	1845-04-17	1913-10-24	5	2026-09-21T08:47:41Z	797	2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+6	voter-dr-c-a-bartol	Dr. C. A. Bartol	Q66788920	male	1813-04-30	1900	1	2026-09-21T08:47:41Z	675	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+7	voter-rev-george-batchelor	Rev. George Batchelor	Q111025423	male	1836-07-03	1923-06-21	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+8	voter-susie-b-beals	Susie B. Beals	Q141460515	female	1823-10-18	1904-04-19	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+9	voter-miss-bissell	Miss Bissell	Q141265643	female	1859-04-17	1941-08-28	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1885-02-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA486
+10	voter-mrs-j-k-boyesen	Mrs. J. K. Boyesen	Q141246256	female	1853	1903-09-17	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+11	voter-mrs-e-l-browne	Mrs. E. L. Browne	Q141469746	female	1820	1897-11-14	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+12	voter-mrs-b-r-bulkeley	Mrs. B. R. Bulkeley	Q141235240	female	1857-04-03	1940-09-18	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+13	voter-mrs-e-l-bullard	Mrs. E. L. Bullard	Q138568446	female	1831-12-08	1895-08-21	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+14	voter-rev-h-bernard-carpenter	Rev. H. Bernard Carpenter	Q5718111	male	1840	1890	1	2026-09-21T08:47:41Z	150	2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+15	voter-w-h-carruth	W. H. Carruth	Q21664274	male	1859-04-05	1924-12-15	2	2026-09-21T08:47:41Z	617	2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+16	voter-mrs-w-h-carruth	Mrs. W. H. Carruth	Q141235188	female	1854-10-04	1908-09-03	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+17	voter-rev-john-chadwick	Rev. John Chadwick	Q15498332	male	1840-10-19	1904-12-11	4	2026-09-21T08:47:41Z	676	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+18	voter-james-freeman-clarke	James Freeman Clarke	Q323362	male	1810-04-04	1888-06-08	8	2026-09-21T08:47:41Z	9439	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+19	voter-james-colegrove	James Colegrove	Q141223951	male	1830-09-03	1922-12-16	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+20	voter-robert-collyer	Robert Collyer	Q12702002	male	1823-12-08	1912-11-30	2	2026-09-21T08:47:41Z	1200	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+21	voter-george-willis-cooke	George Willis Cooke	Q15437653	male	1848-04-23	1923-04-30	3	2026-09-21T08:47:41Z	408	2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+22	voter-miss-lucretia-crocker	Miss Lucretia Crocker	Q22017472	female	1829	1886-10-09	1	2026-09-21T08:47:41Z	339	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+23	voter-prof-thomas-davidson	Prof. Thomas Davidson	Q3525030	male	1840-10-25	1900-09-14	5	2026-09-21T08:47:41Z	3884	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA206
+24	voter-c-f-dole	C. F. Dole	Q5077709	male	1845-05-17	1927-11-27	2	2026-09-21T08:47:41Z	2522	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+25	voter-prof-c-c-everett	Prof. C. C. Everett	Q5076120	male	1829-06-19	1900-10-16	2	2026-09-21T08:47:41Z	552	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+26	voter-mrs-susie-d-follansbee	Mrs. Susie D. Follansbee	Q141414371	female	1848-09-24	1915-06-26	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+27	voter-miss-phoebe-fort	Miss Phœbe Fort	Q141475298	female	1858-08-31	1903-12-30	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1885-02-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA487
+28	voter-prof-j-c-freeman	Prof. J. C. Freeman	Q141235226	male	1842-02-14	1911-04-10	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+29	voter-w-e-furness-esq	W. E. Furness, Esq.	Q94259148	male	1839-08-21	1913-07-19	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+30	voter-miss-ella-a-giles	Miss Ella A. Giles	Q56096292	female	1851-02-02	1917-06-26	2	2026-09-21T08:47:41Z	400	2026-09-21T08:47:44Z	1884-09-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA268
+31	voter-n-p-gilman	N. P. Gilman	Q18239172	male	1849-12-21	1912-01-23	2	2026-09-21T08:47:41Z	56	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+32	voter-miss-e-e-gordon	Miss E. E. Gordon	Q56248073	female	1852-10-10	1942-01-06	1	2026-09-21T08:47:41Z	269	2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+33	voter-samuel-s-greeley-esq	Samuel S. Greeley, Esq.	Q141224134	male	1824-10-11	1916-03-08	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+34	voter-mrs-hattie-tyng-griswold	Mrs. Hattie Tyng Griswold	Q29920448	female	1842-01-26	1909	2	2026-09-21T08:47:41Z	300	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+35	voter-edward-everett-hale	Edward Everett Hale	Q786616	male	1822-04-03	1909-06-10	18	2026-09-21T08:47:41Z	37668	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+36	voter-prof-w-t-harris	Prof. W. T. Harris	Q5791238	male	1835-09-10	1909-11-05	7	2026-09-21T08:47:41Z	5544	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+37	voter-dr-frederic-h-hedge	Dr. Frederic H. Hedge	Q5497046	male	1805-12-12	1890-08-21	1	2026-09-21T08:47:41Z	3219	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+38	voter-mrs-h-m-hiscock	Mrs. H. M. Hiscock	Q141475778	female	1830		0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1885-01-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA430
+39	voter-mrs-israel-holmes	Mrs. Israel Holmes	Q141467407	female	1829-08-24	1912-04-01	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+40	voter-prof-j-k-hosmer	Prof. J. K. Hosmer	Q6137218	male	1834-01-29	1927-05-11	3	2026-09-21T08:47:41Z	1110	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+41	voter-miss-grace-howe	Miss Grace Howe	Q141475508	female	1838-07-03	1920-07-28	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+42	voter-mrs-sara-a-hubbard	Mrs. Sara A. Hubbard	Q98097675	female	1832-09-07	1918-07-31	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+43	voter-mrs-f-a-johnson	Mrs. F. A. Johnson	Q141476200	female	1848	1928	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+44	voter-j-ll-jones	J. Ll. Jones	Q6177549	male	1843-11-14	1918-09-12	2	2026-09-21T08:47:41Z	3985	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+45	voter-mrs-s-c-ll-jones	Mrs. S. C. Ll. Jones	Q62026508	female	1832	1911	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+46	voter-mrs-c-b-king	Mrs. C. B. King	Q141484775	female	1829-06-15	1905-01-14	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+47	voter-rev-j-c-learned	Rev. J. C. Learned	Q94662903	male	1834	1893	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+48	voter-miss-mary-thorn-lewis	Miss Mary Thorn Lewis	Q126001998	female	1854-02-27	1952-10-26	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+49	voter-miss-lily-a-long	Miss Lily A. Long	Q70278553	female	1862	1927	1	2026-09-21T08:47:41Z	196	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA228
+50	voter-h-mceroy	H. McEroy	Q141224997	male	1849-10-02	1915-10-15	0	2026-09-21T08:47:41Z		2026-09-21T08:47:44Z	1884-10-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA306
+51	voter-mrs-a-b-mcmahan	Mrs. A. B. McMahan	Q103982195	female	1846-07-24	1919-11-27	0	2026-09-21T08:47:41Z	8	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+52	voter-mrs-emma-e-marean	Mrs. Emma E. Marean	Q138654833	female	1854-01-20	1936-10-17	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+53	voter-mrs-mary-b-marean	Mrs. Mary B. Marean	Q141419089	female	1839	1909-10-01	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+54	voter-edwin-d-mead	Edwin D. Mead	Q83982479	male	1849-09-29	1937-08-17	1	2026-09-21T08:47:42Z	113	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+55	voter-rev-mary-a-safford	Rev. Mary A. Safford	Q56248084	female	1851-12-23	1927-10-25	1	2026-09-21T08:47:42Z	302	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+56	voter-frances-p-sawyer	Frances P. Sawyer	Q141247822	female	1836-09-05	1907-05-07	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+57	voter-prof-c-c-shackford	Prof. C. C. Shackford	Q21600517	male	1815	1891	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207
+58	voter-mrs-helen-s-shedd	Mrs. Helen S. Shedd	Q141224928	female	1841-05-26	1894-06-16	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+59	voter-mrs-m-a-shorey	Mrs. M. A. Shorey	Q141417553	female	1830-12-20	1907-03-08	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+60	voter-h-m-simmons	H. M. Simmons	Q55720818	male	1841	1905	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+61	voter-mrs-fayette-smith	Mrs. Fayette Smith	Q28954490	female	1840-07-23	1930-12-17	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+62	voter-rev-c-j-staples	Rev. C. J. Staples	Q141224433	male	1856-05-30	1936-01-02	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+63	voter-giles-b-stebbins	Giles B. Stebbins	Q141224446	male	1817-06-24	1900-10-31	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1885-02-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA489
+64	voter-j-t-sunderland	J. T. Sunderland	Q52155288	male	1842-02-11	1936-08-13	1	2026-09-21T08:47:42Z	1294	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+65	voter-harriet-s-tolman	Harriet S. Tolman	Q141224499	female	1846-06-27	1922-09-06	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+66	voter-mrs-agatha-tunis	Mrs. Agatha Tunis	Q141416717	female			0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA249
+67	voter-mrs-e-a-west	Mrs. E. A. West	Q141476117	female	1839-12-10	1901-06-21	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA250
+68	voter-dr-samuel-willard	Dr. Samuel Willard	Q141224563	male	1821-12-30	1913-02-09	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1885-02-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA489
+69	voter-mrs-alice-l-williams	Mrs. Alice L. Williams	Q141376523	female			0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+70	voter-mrs-celia-p-woolley	Mrs. Celia P. Woolley	Q5058012	female	1848-06-14	1918-03-09	2	2026-09-21T08:47:42Z	274	2026-09-21T08:47:44Z	1884-08-01	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA229
+71	voter-mrs-villa-a-wright	Mrs. Villa A. Wright	Q141224752	female	1846-02-23	1909-01-26	0	2026-09-21T08:47:42Z		2026-09-21T08:47:44Z	1884-08-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA250
+72	voter-prof-j-c-zachos	Prof. J. C. Zachos	Q3181216	male	1820-12-20	1898-03-20	4	2026-09-21T08:47:42Z	4173	2026-09-21T08:47:44Z	1884-07-16	https://books.google.com/books?id=zzUrAAAAYAAJ&pg=PA207

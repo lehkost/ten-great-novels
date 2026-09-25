@@ -64,8 +64,13 @@ for e in r.iter():
 (ok if not dangling else err)("Internal pointers (@ana/@next/@prev/@target): all resolve"
    if not dangling else f"Dangling pointers: {sorted(set(dangling))}")
 
-# 5 @ana discipline: works (#vote/#mention) and correspondents (#woman/#man/#unknown)
-WORK_ANA={'#vote','#mention'}; GEND_ANA={'#woman','#man','#unknown'}
+# 5 @ana discipline: works (#vote/#mention) and correspondents (one of the categories
+# of taxonomy "correspondent-gender", read from the TEI header so that the script
+# follows the vocabulary of the file: #female/#male/#unknown at the time of writing)
+WORK_ANA={'#vote','#mention'}
+GEND_ANA={'#'+c.get(XML+'id') for c in
+          r.iterfind('.//t:taxonomy[@xml:id="correspondent-gender"]/t:category',
+                     {**NS,'xml':'http://www.w3.org/XML/1998/namespace'})}
 anas=[e for e in r.iter() if e.get('ana')]
 wa=[e for e in anas if e.get('ana') in WORK_ANA]
 ga=[e for e in anas if e.get('ana') in GEND_ANA]

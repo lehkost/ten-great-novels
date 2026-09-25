@@ -4,15 +4,22 @@ geojson_export.py: builds a GeoJSON of the correspondents' places and the
 matching geojson.io link.
 
 The counts come from the TEI file, the coordinates and names from Wikidata
-(P625, fetched at build time through the wbgetentities API, one request for
-all places, which is far less prone to throttling than the query service).
-If Wikidata cannot be reached, the script writes an empty URL file and exits 0:
-the build then simply omits the GeoJSON link instead of failing.
+(P625, fetched through the wbgetentities API, one request for all places, which
+is far less prone to throttling than the query service).
+
+The coordinates are kept in data/places-coordinates.tsv, next to the TEI file.
+Places found there are not asked for again, so a build needs no network as long
+as every place of the TEI file is in the table. Places that are missing are
+fetched from Wikidata and added to the table; commit the table when it changes.
+To refresh it, delete the file (or single rows) and build again with network.
+If a fetch is needed and Wikidata cannot be reached, the script writes an empty
+URL file and exits 0: the build then simply omits the GeoJSON link instead of
+failing.
 
 Usage: python3 scripts/geojson_export.py data/ten-great-novels.xml
 Writes: correspondents.geojson, geojsonio-url.txt
 """
-import json, sys, time, urllib.parse, urllib.request
+import csv, json, os, sys, time, urllib.parse, urllib.request
 from lxml import etree
 
 from tei_places import count_places
@@ -24,6 +31,8 @@ UA = ('ten-great-novels-build/1.0 (https://github.com/lehkost/ten-great-novels; 
 CHUNK = 50                                  # wbgetentities takes 50 ids per call
 RETRIES = 3
 LANGUAGES = ('en', 'mul')                   # mul: Wikidata's language-neutral label
+CACHE_NAME = 'places-coordinates.tsv'
+CACHE_FIELDS = ('wikidata', 'name', 'latitude', 'longitude')
 
 # ---------------------------------------------------------------- counts
 cnt = count_places(etree.parse(sys.argv[1]))
@@ -66,11 +75,30 @@ def coordinate(entity):
     except (TypeError, KeyError):
         return None
 
-ids = list(cnt)
-coords = {}
+cache_path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), CACHE_NAME)
+
+def read_cache(path):
+    """{Q number: (name, latitude, longitude)} from the table, empty if absent."""
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding='utf-8', newline='') as fh:
+        return {r['wikidata']: (r['name'], float(r['latitude']), float(r['longitude']))
+                for r in csv.DictReader(fh, delimiter='\t')}
+
+def write_cache(path, table):
+    with open(path, 'w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh, delimiter='\t', lineterminator='\n')
+        w.writerow(CACHE_FIELDS)
+        for q in sorted(table, key=lambda k: int(k[1:])):
+            name, lat, lon = table[q]
+            w.writerow((q, name, lat, lon))
+
+table = read_cache(cache_path)
+coords = {q: table[q] for q in cnt if q in table}
+to_fetch = [q for q in cnt if q not in coords]
 try:
-    for i in range(0, len(ids), CHUNK):
-        for q, e in fetch(ids[i:i + CHUNK]).items():
+    for i in range(0, len(to_fetch), CHUNK):
+        for q, e in fetch(to_fetch[i:i + CHUNK]).items():
             ll = coordinate(e)
             if ll:
                 coords[q] = (label(e, q), *ll)
@@ -78,6 +106,11 @@ except Exception as e:
     open('geojsonio-url.txt', 'w').write('\n')
     print(f'Wikidata not reachable ({e.__class__.__name__}: {e}); GeoJSON link omitted')
     sys.exit(0)
+
+if to_fetch and any(q in coords for q in to_fetch):
+    table.update({q: coords[q] for q in to_fetch if q in coords})
+    write_cache(cache_path, table)
+    print(f'{CACHE_NAME} updated ({sum(q in coords for q in to_fetch)} places): please commit it')
 
 missing = [q for q in cnt if q not in coords]
 
@@ -115,5 +148,5 @@ assert '#' not in compact, 'payload must not contain a literal #'
 open('geojsonio-url.txt', 'w').write(
     'https://geojson.io/#data=data:application/json,' + urllib.parse.quote(compact, safe='') + '\n')
 
-print(f'{len(feats)} places from Wikidata, {sum(cnt.values())} correspondents'
+print(f'{len(feats)} places ({len(cnt) - len(to_fetch)} from {CACHE_NAME}, {len(to_fetch) - len(missing)} from Wikidata), {sum(cnt.values())} correspondents'
       + (f' | WITHOUT coordinates: {missing}' if missing else ''))

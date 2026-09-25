@@ -21,8 +21,15 @@
   <xsl:param name="wdqs-url"/>
   <xsl:param name="graphml-file">ten-great-novels.graphml</xsl:param>
   <xsl:param name="tei-file">ten-great-novels.xml</xsl:param>
-  <xsl:param name="tsv-file">novels-authors-metadata.tsv</xsl:param>
+  <xsl:param name="tsv-file">novels-authors-metadata-enriched.tsv</xsl:param>
+  <xsl:param name="respondents-tsv-file">respondents-metadata-enriched.tsv</xsl:param>
   <xsl:param name="geojson-url"/>
+  <!-- Set by build.sh: the Wikidata Query Service links for the images of the
+       authors, the novels and the correspondents, one query per group. If a
+       parameter is empty, that word is plain text instead of a link. -->
+  <xsl:param name="images-authors-url"/>
+  <xsl:param name="images-novels-url"/>
+  <xsl:param name="images-correspondents-url"/>
 
   <!-- The URL of this edition comes from <idno type="URL"> in the header; the
        parameter only overrides it (e.g. for a preview build). -->
@@ -45,6 +52,10 @@
   </xsl:variable>
   <xsl:variable name="orcid"
       select="//tei:titleStmt/tei:respStmt/tei:persName[contains(@ref,'orcid.org')][1]/@ref"/>
+  <!-- Affiliation of the creator: the orgName that follows the persName (with the
+       ORCID) in the same respStmt -->
+  <xsl:variable name="affiliation"
+      select="//tei:titleStmt/tei:respStmt[tei:persName[contains(@ref,'orcid.org')]][1]/tei:orgName[1]"/>
   <xsl:variable name="licence" select="//tei:publicationStmt/tei:availability/tei:licence[1]"/>
   <xsl:variable name="version" select="//tei:editionStmt/tei:edition/@n"/>
   <xsl:variable name="pubdate-iso" select="//tei:publicationStmt/tei:date/@when"/>
@@ -191,7 +202,14 @@ ul.cols li{break-inside:avoid}
     "name": "<xsl:call-template name="esc">
         <xsl:with-param name="s" select="//tei:titleStmt/tei:respStmt/tei:persName"/>
       </xsl:call-template>",
-    "sameAs": "<xsl:value-of select="$orcid"/>"
+    "sameAs": "<xsl:value-of select="$orcid"/>"<xsl:if test="$affiliation">,
+    "affiliation": {
+     "@type": "CollegeOrUniversity",
+     "name": "<xsl:call-template name="esc">
+         <xsl:with-param name="s" select="normalize-space($affiliation)"/>
+       </xsl:call-template>"<xsl:if test="starts-with($affiliation/@ref,'http')">,
+     "sameAs": "<xsl:value-of select="$affiliation/@ref"/>"</xsl:if>
+    }</xsl:if>
    },
    "editor": {
     "@type": "Person",
@@ -240,9 +258,15 @@ ul.cols li{break-inside:avoid}
     },
     {
      "@type": "DataDownload",
-     "name": "Novels and authors with Wikidata and Goodreads identifiers",
+     "name": "Novels and authors with Wikidata and Goodreads identifiers, Wikipedia sitelinks, QRank and Goodreads ratings",
      "encodingFormat": "text/tab-separated-values",
      "contentUrl": "<xsl:value-of select="$base"/><xsl:value-of select="$tsv-file"/>"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Correspondents with Wikidata identifiers, Wikipedia sitelinks and QRank",
+     "encodingFormat": "text/tab-separated-values",
+     "contentUrl": "<xsl:value-of select="$base"/><xsl:value-of select="$respondents-tsv-file"/>"
     },
     {
      "@type": "DataDownload",
@@ -384,13 +408,36 @@ ul.cols li{break-inside:avoid}
       <span class="bh">Data and downloads</span>
       <ul>
         <li>Annotated text of the edition (<a href="{$tei-file}">TEI</a>)</li>
-        <li>Novels and authors with Wikidata and Goodreads identifiers
+        <li>Novels and authors with Wikidata and Goodreads identifiers, Wikipedia sitelinks, QRank and Goodreads ratings
           (<a href="{$tsv-file}">TSV</a>)</li>
+        <li>Correspondents with Wikidata identifiers, Wikipedia sitelinks and QRank
+          (<a href="{$respondents-tsv-file}">TSV</a>)</li>
         <li>Bipartite network of correspondents and votes
           (<a href="{$graphml-file}">GraphML</a>)</li>
         <li>Places of the correspondents in
           <a href="{$wdqs-url}">Wikidata Query Service</a><xsl:if test="$geojson-url != ''"> or
           <a href="{$geojson-url}">GeoJSON</a></xsl:if></li>
+        <li>Images (Wikidata Query Service) of the
+          <xsl:choose>
+            <xsl:when test="$images-authors-url != ''">
+              <a href="{$images-authors-url}">authors</a>
+            </xsl:when>
+            <xsl:otherwise>authors</xsl:otherwise>
+          </xsl:choose>,
+          <xsl:choose>
+            <xsl:when test="$images-novels-url != ''">
+              <a href="{$images-novels-url}">novels</a>
+            </xsl:when>
+            <xsl:otherwise>novels</xsl:otherwise>
+          </xsl:choose> and
+          <xsl:choose>
+            <xsl:when test="$images-correspondents-url != ''">
+              <a href="{$images-correspondents-url}">correspondents</a>
+            </xsl:when>
+            <xsl:otherwise>correspondents</xsl:otherwise>
+          </xsl:choose>
+          <span class="note">(each query is run live; it can take a while or time out, and
+          only items with an image on Wikidata are shown)</span></li>
       </ul>
     </div>
   </xsl:template>
